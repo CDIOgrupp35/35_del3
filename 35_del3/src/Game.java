@@ -50,7 +50,7 @@ public class Game {
                 System.out.println((String) jText.get("sq3"));
                 break;
             case 4:
-                playerOne.balance.addPoints(100);gfyfghdhj
+                playerOne.balance.addPoints(100);
                 System.out.println((String) jText.get("sq4"));
                 break;
             case 5:
