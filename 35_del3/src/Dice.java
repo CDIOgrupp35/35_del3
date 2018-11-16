@@ -1,47 +1,66 @@
 import java.util.Random;
 
 public class Dice {
-    private int faceValue1;
-    private int faceValue2;
-    private int _sum;
     private Random random = new Random();
+    private int sides;
+    private int diceAmount;
+    private int diceArray[] = new int[diceAmount];
 
     /**
-     * Throws one die and generates a value between 1-6
+     * Constructs a Dice object
      *
-     * @return nothing, but changes internal values
+     * @param noDice the number of dice you wish to have
+     * @param noSide the number of sides you wish each dice to have
      */
-    public void roll() {
-        this.faceValue1 = random.nextInt(6) + 1;
-        this.faceValue2 = random.nextInt(6) + 1;
+    public Dice (int noDice, int noSide ) {
+        sides = noSide;
+        diceAmount = noDice;
+    }
 
+    /**
+     * rolls dice
+     *
+     * @return an int[] array containing the face values of the dice.
+     */
+    public int[] roll() {
+        for(int i = 0; i <= diceAmount; i++) {
+            diceArray[i] = random.nextInt(sides) + 1;
+        }
+        return diceArray;
     }
 
 
-    /** Sums the face value of two dice objects
+    /**
+     * Loops through the diceArray and sums all of values
      *
-     *
-     * @return The sum of the two internal faceValue integers
+     * @return the sum of all the values in diceArray
      */
     public int sum() {
-        this._sum = this.faceValue1 + this.faceValue2;
-        return this._sum;
+        int sum = 0;
+        for(int i = 0; i < diceArray.length; i++) {
+            sum += diceArray[i];
+        }
+        return sum;
     }
 
-    public int setFaceValue1(int i) {
-        return this.faceValue1 = i;
+    /**
+     * sets the face of one of the dice
+     *
+     * @param index the index of the dice in diceArray that you wish to set
+     * @param value the value that you wish to set it to
+     */
+    public void setFaceValue(int index, int value) {
+        diceArray[index] = value;
     }
 
-    public int setFaceValue2(int i) {
-        return this.faceValue2 = i;
-    }
-
-    public int getFaceValue1() {
-        return this.faceValue1;
-    }
-
-    public int getFaceValue2() {
-        return this.faceValue2;
+    /**
+     * gets the value of one of the dice
+     *
+     * @param index the index of the dice in diceArray that you wish to get.
+     * @return the value of the indexed dice.
+     */
+    public int getFaceValue(int index) {
+        return this.diceArray[index];
     }
 
 }
