@@ -1,3 +1,5 @@
+import com.sun.jdi.IntegerValue;
+
 import java.util.Random;
 
 public class Dice {
@@ -31,14 +33,24 @@ public class Dice {
 
 
     /**
-     * Loops through the diceArray and sums all of values
+     * loops through the diceArray array and sums all the values
      *
-     * @return the sum of all the values in diceArray
+     * @return the sum of all values in diceArray
+     * @throws Exception Sum is too large.
      */
-    public int sum() {
+    public int sum() throws Exception {
         int sum = 0;
         for(int i = 0; i < diceArray.length; i++) {
             sum += diceArray[i];
+        }
+        boolean positive = true;
+        for (int i = 0; i < diceArray.length; i++) {
+            if (diceArray[i] < 0) {
+                positive = false;
+            }
+        }
+        if(positive && sum < 0)  {
+            throw new Exception("Error: the sum is too large");
         }
         return sum;
     }
