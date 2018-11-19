@@ -34,7 +34,7 @@ public class Dice {
 
     /**
      * loops through the diceArray array and sums all the values
-     * hh
+     * 
      * @return the sum of all values in diceArray
      * @throws Exception Sum is too large.
      */
