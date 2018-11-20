@@ -1,4 +1,5 @@
 package Squares;
+import Player.Player;
 
 public abstract class Square {
     protected int sqNum;
