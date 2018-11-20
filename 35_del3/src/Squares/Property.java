@@ -32,6 +32,9 @@ public class Property extends Square {
         }
     }
 
+    /**Method swapping the boolean value of vacant.
+     *
+     */
     public void toggleVacant(){
         if(vacant){
             vacant = false;

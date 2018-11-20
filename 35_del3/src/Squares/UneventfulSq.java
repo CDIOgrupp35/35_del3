@@ -10,6 +10,4 @@ public class UneventfulSq extends Square {
     public void landOn(Player player){
         System.out.println("Take a break");
     }
-
-
 }
