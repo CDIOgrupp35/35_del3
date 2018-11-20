@@ -1,8 +1,6 @@
 import org.json.simple.JSONObject;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class GameIntegrationTest {
 
     Player testPlayer1 = new Player("player1");
