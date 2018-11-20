@@ -9,7 +9,7 @@ public abstract class Square {
         this.sqName = sqName;
     }
 
-    protected void landOn(){
+    protected void landOn(Player player){
 
     }
 }
