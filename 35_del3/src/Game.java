@@ -1,4 +1,4 @@
-import Dice;
+import Player.Dice;
 import Player.Player;
 import org.json.simple.JSONObject;
 
