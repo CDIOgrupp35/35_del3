@@ -5,12 +5,22 @@ public class Property extends Square {
     private boolean vacant;
     private Player owner;
 
+    /**Constructor, creates an instance of the class: Property.
+     *
+     * @param sqNum
+     * @param sqName
+     * @param price
+     */
     public Property(int sqNum, String sqName, int price){
         super(sqNum, sqName);
         vaccant = true;
         this.price = price;
     }
 
+    /**Method applying changes to a players' balance depending on the vacancy of the property.
+     *
+     * @param player
+     */
     public void landOn(Player player){
         player.balance.subPoints(price);
         if(!vacant){
