@@ -1,3 +1,5 @@
+package Player;
+
 public class Balance {
     private int points;
 

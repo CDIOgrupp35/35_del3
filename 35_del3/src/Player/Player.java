@@ -1,5 +1,7 @@
+package Player;
+
 public class Player {
-    Balance balance;
+    private Balance balance;
     private boolean isTurn;
     private String playerName;
     private int location;
@@ -33,6 +35,7 @@ public class Player {
         isTurn = turn;
     }
 
+    public Balance getBalance(){return balance;}
 
     /**
      * A string containing the player's name

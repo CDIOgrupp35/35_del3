@@ -1,3 +1,5 @@
+package Player;
+
 import com.sun.jdi.IntegerValue;
 
 import java.util.Random;
@@ -9,7 +11,7 @@ public class Dice {
     private int diceArray[] = new int[diceAmount];
 
     /**
-     * Constructs a Dice object
+     * Constructs a Player.Dice object
      *
      * @param noDice the number of dice you wish to have
      * @param noSide the number of sides you wish each dice to have

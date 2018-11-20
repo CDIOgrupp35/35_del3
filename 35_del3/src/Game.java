@@ -1,3 +1,5 @@
+import Dice;
+import Player.Player;
 import org.json.simple.JSONObject;
 
 public class Game {
