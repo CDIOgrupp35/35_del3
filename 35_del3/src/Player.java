@@ -6,9 +6,9 @@ public class Player {
     /** Constructor, creates a instance of the class: balance.
      *
      * @param playerName The name of the player.*/
-    public Player(String playerName){
+    public Player(String playerName, int startBalance){
         this.playerName = playerName;
-        this.balance = new Balance(1000);
+        this.balance = new Balance(startBalance);
     }
 
     /** Boolean for what player has the turn *
@@ -30,7 +30,7 @@ public class Player {
      *
      * @return The player's name.
      */
-    public String toString() {
+    public String getName() {
         return playerName;
     }
 
