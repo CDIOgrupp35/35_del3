@@ -1,10 +1,4 @@
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 
 public class Game {
     private Dice masterDice = new Dice();
@@ -90,8 +84,8 @@ public class Game {
                 break;
         }
 
-        System.out.println(playerOne.toString() + jText.get("balance") + playerOne.balance.getPoints());
-        System.out.println(playerTwo.toString() + jText.get("balance") + playerTwo.balance.getPoints());
+        System.out.println(playerOne.getName() + jText.get("balance") + playerOne.balance.getPoints());
+        System.out.println(playerTwo.getName() + jText.get("balance") + playerTwo.balance.getPoints());
         if (diceRoll != 10) turnSwitch(playerTwo, playerOne);
 
     }
@@ -105,10 +99,10 @@ public class Game {
     public void winGame(Player player1, Player player2) {
         if (player1.balance.getPoints() >= winCon) {
             play = false;
-            System.out.println(player1.toString() + jText.get("win"));
+            System.out.println(player1.getName() + jText.get("win"));
         } else if (player2.balance.getPoints() >= winCon) {
             play = false;
-            System.out.println(player2.toString() + jText.get("win"));
+            System.out.println(player2.getName() + jText.get("win"));
         }
     }
 
@@ -121,9 +115,9 @@ public class Game {
     public void showTurn(Player player1, Player player2) {
         if (play) {
             if (player1.getIsTurn()) {
-                System.out.println("\n " + player1.toString() + jText.get("turn"));
+                System.out.println("\n " + player1.getName() + jText.get("turn"));
             } else if (player2.getIsTurn()) {
-                System.out.println("\n " + player2.toString() + jText.get("turn"));
+                System.out.println("\n " + player2.getName() + jText.get("turn"));
             }
 
         }

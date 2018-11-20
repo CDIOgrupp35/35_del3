@@ -2,13 +2,22 @@ public class Player {
     Balance balance;
     private boolean isTurn;
     private String playerName;
+    private int location;
 
     /** Constructor, creates a instance of the class: balance.
      *
      * @param playerName The name of the player.*/
-    public Player(String playerName){
+    public Player(String playerName, int startBalance){
         this.playerName = playerName;
-        this.balance = new Balance(1000);
+        this.balance = new Balance(startBalance);
+    }
+
+    public int getLocation() {
+        return location;
+    }
+
+    public void setLocation(int location) {
+        this.location = location;
     }
 
     /** Boolean for what player has the turn *
@@ -30,7 +39,7 @@ public class Player {
      *
      * @return The player's name.
      */
-    public String toString() {
+    public String getName() {
         return playerName;
     }
 

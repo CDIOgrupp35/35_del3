@@ -1,11 +1,9 @@
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import java.io.FileWriter;
+
 import java.io.IOException;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import java.io.FileNotFoundException;
-import java.util.Iterator;
 import java.io.FileReader;
 import java.util.Scanner;
 public class Main{
@@ -38,7 +36,7 @@ public class Main{
         Game game = new Game(jason);
 
         System.out.println(jason.get("rules"));
-        System.out.println("\n " + player1.toString() + jason.get("start"));
+        System.out.println("\n " + player1.getName() + jason.get("start"));
 
         player1.setTurn(true);
 
