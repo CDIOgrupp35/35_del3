@@ -11,10 +11,5 @@ public class Jail extends Square {
 
     public void landOn(Player player){
         player.setLocation(jail);
-        //TODO implementer ingen penge hvis man passerer start?
-    }
-
-    public void bailJail(Player player){
-        player.balance.subPoints(fine);
     }
 }
