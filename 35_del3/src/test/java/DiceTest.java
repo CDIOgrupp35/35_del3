@@ -1,12 +1,18 @@
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+=======
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DiceTest {
 
-    private Dice testDice = new Dice();
 
+    private Dice testDice = new Dice(2, 6);
 
     /** test if the roll() method generates TWO random numbers between 1 and 6, repeated 500 times to make sure
     @<expectedResult> all tests return true
@@ -15,9 +21,9 @@ class DiceTest {
     void testRoll() {
         testDice.roll();
 
-        assertTrue((testDice.getFaceValue1() >= 1 && testDice.getFaceValue1() <= 6));
 
-        assertTrue((testDice.getFaceValue2() >= 1 && testDice.getFaceValue2() <= 6));
+        assertTrue(testDice.getFaceValue(1) < 6 && testDice.getFaceValue(1) > 1);
+        assertTrue(testDice.getFaceValue(0) < 6 && testDice.getFaceValue(0) > 1);
 
     }
     /** test if the rolls are "fair", using the same criteria as the assignment handed in this past monday.
@@ -36,7 +42,11 @@ class DiceTest {
 
         for(int i = 0; i < 60000; i++) {
             testDice.roll();
+
+            int rollResult = testDice.getFaceValue(0);
+
             int rollResult = testDice.getFaceValue1();
+
 
             switch(rollResult) {
                 case 1:
@@ -76,10 +86,31 @@ class DiceTest {
     @<actualResult> test returned true, successful addition of two integers */
     @Test
     void testSum() {
-        testDice.setFaceValue1(5);
-        testDice.setFaceValue2(4);
 
-        assertEquals(9,testDice.sum());
+        testDice.setFaceValue(0, 1);
+        testDice.setFaceValue(1, 1);
+
+        try {
+            assertEquals(2, testDice.sum());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        testDice.setFaceValue(0, 6);
+        testDice.setFaceValue(1, 6);
+        try {
+            assertEquals(12, testDice.sum());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        testDice.setFaceValue(0, 1073741823);
+        testDice.setFaceValue(1, 1073741824);
+        try {
+            assertEquals(2147483647, testDice.sum());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

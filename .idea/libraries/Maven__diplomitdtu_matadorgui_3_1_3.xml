@@ -8,6 +8,14 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_codebehind" />
+      <root url="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_fields" />
+      <root url="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_main" />
+      <root url="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_resources" />
+      <root url="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_tests" />
+      <root url="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/META-INF" />
+      <root url="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/META-INF/maven/diplomitdtu/matadorgui" />
     </SOURCES>
   </library>
 </component>
