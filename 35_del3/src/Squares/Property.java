@@ -1,5 +1,7 @@
 package Squares;
 
+import Player.Player;
+
 public class Property extends Square {
     private int price;
     private boolean vacant;
@@ -13,7 +15,7 @@ public class Property extends Square {
      */
     public Property(int sqNum, String sqName, int price){
         super(sqNum, sqName);
-        vaccant = true;
+        vacant = true;
         this.price = price;
     }
 
@@ -22,9 +24,9 @@ public class Property extends Square {
      * @param player
      */
     public void landOn(Player player){
-        player.balance.subPoints(price);
+        player.getBalance().subPoints(price);
         if(!vacant){
-            owner.balance.addPoints(price);
+            owner.getBalance().addPoints(price);
         }
         else{
             setOwner(player);

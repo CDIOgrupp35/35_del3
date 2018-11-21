@@ -1,3 +1,4 @@
+import Controllers.Game;
 import Player.Player;
 import org.json.simple.JSONObject;
 
@@ -18,7 +19,7 @@ public class Main{
 
 
 
-        System.out.println("Welcome to IOOuterActive Adventure Game (please select language) \n 1) English \n 2) Dansk");
+        System.out.println("Welcome to IOOuterActive Adventure Controllers.Game (please select language) \n 1) English \n 2) Dansk");
         Scanner scan = new Scanner(System.in);
         int input = scan.nextInt();
         if(input == 1)

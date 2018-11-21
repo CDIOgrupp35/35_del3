@@ -1,9 +1,9 @@
-import Player.Dice;
-import Player.Player;
+package Controllers;
+import Player.*;
 import org.json.simple.JSONObject;
 
 public class Game {
-    private Dice masterDice = new Dice();
+    private Dice masterDice = new Dice(1,6);
     private int winCon = 3000;
     private JSONObject jText;
     private boolean play = true;
@@ -128,7 +128,7 @@ public class Game {
     /**
      * A method that is getting called to control the game running.
      * <p>
-     *     This method uses the other methods in the Game() class to play the turn, print out whose turn it is and
+     *     This method uses the other methods in the Controllers.Game() class to play the turn, print out whose turn it is and
      *     check if the win condition is met.
      * </p>
      *

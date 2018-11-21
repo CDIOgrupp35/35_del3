@@ -1,4 +1,5 @@
 package Squares;
+import Player.Player;
 
 public class Jail extends Square {
 
