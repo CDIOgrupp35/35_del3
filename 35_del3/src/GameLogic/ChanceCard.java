@@ -14,7 +14,7 @@ public class ChanceCard {
         this.cardEffect = cardEffect;
     }
 
-    public void setCardEffect(){
+    public void setCardEffect(Player player){
         switch (cardEffect) {
             case 1:
                 gRule.passStart(player, 0);
@@ -23,7 +23,7 @@ public class ChanceCard {
                 gRule.movePlayer(player, 5);
                 break;
             case 3:
-
+                player.getBalance().subPoints(2);
         }
     }
 }
