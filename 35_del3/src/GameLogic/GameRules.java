@@ -22,7 +22,12 @@ public class GameRules {
                 return true;
         }
         return false;
+    }
 
+    public Player winner(Player[] players){
+        for (int i = 0; i < players.length; i++){
+
+        }
     }
 
 
