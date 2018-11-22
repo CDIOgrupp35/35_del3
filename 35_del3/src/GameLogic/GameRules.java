@@ -25,9 +25,20 @@ public class GameRules {
     }
 
     public Player winner(Player[] players){
-        for (int i = 0; i < players.length; i++){
-
+        int i = 0;
+        while (i < players.length){
+            int win = 0;
+            for (int j = 0; j < players.length; j++){
+                if (i!= j && players[i].getBalance().getPoints() > players[j].getBalance().getPoints()){ //TODO
+                    win++;
+                }
+            }
+            if (win == 3){
+                break;
+            }
+            else i++;
         }
+        return players[i];
     }
 
 
