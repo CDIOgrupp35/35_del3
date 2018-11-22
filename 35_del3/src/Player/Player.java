@@ -1,5 +1,6 @@
 package Player;
 
+
 public class Player {
     private Balance balance;
     private boolean isTurn;
@@ -12,6 +13,7 @@ public class Player {
     public Player(String playerName, int startBalance){
         this.playerName = playerName;
         this.balance = new Balance(startBalance);
+
     }
 
     public int getLocation() {
