@@ -1,7 +1,5 @@
 package Player;
 
-import com.sun.jdi.IntegerValue;
-
 import java.util.Random;
 
 public class Dice {

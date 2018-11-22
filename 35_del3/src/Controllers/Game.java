@@ -1,15 +1,12 @@
 package Controllers;
 import Player.*;
-import org.json.simple.JSONObject;
 
 public class Game {
     private Dice masterDice = new Dice(1,6);
     private int winCon = 3000;
-    private JSONObject jText;
     private boolean play = true;
 
-    public Game(JSONObject jText) {
-        this.jText = jText;
+    public Game() {
     }
 
     /**
@@ -35,56 +32,6 @@ public class Game {
      */
     public void playTurn(Player playerOne, Player playerTwo, int diceRoll) {
 
-        System.out.println((String) jText.get("rollP1") + diceRoll + jText.get("rollP2"));
-        switch (diceRoll) {
-            case 2:
-                playerOne.balance.addPoints(250);
-                System.out.println((String) jText.get("sq2"));
-                break;
-            case 3:
-                playerOne.balance.subPoints(100);
-                System.out.println((String) jText.get("sq3"));
-                break;
-            case 4:
-                playerOne.balance.addPoints(100);
-                System.out.println((String) jText.get("sq4"));
-                break;
-            case 5:
-                playerOne.balance.subPoints(20);
-                System.out.println((String) jText.get("sq5"));
-                break;
-            case 6:
-                playerOne.balance.addPoints(180);
-                System.out.println((String) jText.get("sq6"));
-                break;
-            case 7:
-                System.out.println((String) jText.get("sq7"));
-                break;
-            case 8:
-                playerOne.balance.subPoints(70);
-                System.out.println((String) jText.get("sq8"));
-                break;
-            case 9:
-                playerOne.balance.addPoints(60);
-                System.out.println((String) jText.get("sq9"));
-                break;
-            case 10:
-                playerOne.balance.subPoints(80);
-                System.out.println((String) jText.get("sq10"));
-                break;
-            case 11:
-                playerOne.balance.subPoints(50);
-                System.out.println((String) jText.get("sq11"));
-                break;
-            case 12:
-                playerOne.balance.addPoints(650);
-                System.out.println((String) jText.get("sq12"));
-
-                break;
-            default:
-                System.out.println("Error, you did not roll a value between 2 and 12");
-                break;
-        }
 
         System.out.println(playerOne.getName() + jText.get("balance") + playerOne.balance.getPoints());
         System.out.println(playerTwo.getName() + jText.get("balance") + playerTwo.balance.getPoints());
@@ -99,10 +46,10 @@ public class Game {
      * @param player2 A player in the game.
      */
     public void winGame(Player player1, Player player2) {
-        if (player1.balance.getPoints() >= winCon) {
+        if (player1.getBalance().getPoints() >= winCon) {
             play = false;
             System.out.println(player1.getName() + jText.get("win"));
-        } else if (player2.balance.getPoints() >= winCon) {
+        } else if (player1.getBalance().getPoints() >= winCon) {
             play = false;
             System.out.println(player2.getName() + jText.get("win"));
         }
