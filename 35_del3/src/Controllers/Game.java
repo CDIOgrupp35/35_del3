@@ -6,13 +6,14 @@ public class Game {
     private Dice masterDice = new Dice(1,6);
     private int winCon = 3000;
     private boolean play = true;
+    private Player[] players;
 
     public Game() {
     }
 
     public Player[] setPlayers(int input){
         Scanner scan = new Scanner(System.in);
-        Player[] players = new Player[input];
+        players = new Player[input];
         int balance;
 
         switch (input){
