@@ -1,7 +1,9 @@
 package Player;
+import Controllers.*;
 
 public class Player {
     private Balance balance;
+    //private GameBoard gameBoard = new GameBoard();
     private boolean isTurn;
     private String playerName;
     private int location;
@@ -12,6 +14,7 @@ public class Player {
     public Player(String playerName, int startBalance){
         this.playerName = playerName;
         this.balance = new Balance(startBalance);
+        this.location = 0;
     }
 
     public int getLocation() {
