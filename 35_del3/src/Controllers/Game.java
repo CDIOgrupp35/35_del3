@@ -1,12 +1,34 @@
 package Controllers;
+import java.util.Scanner;
 import Player.*;
 
 public class Game {
     private Dice masterDice = new Dice(1,6);
     private int winCon = 3000;
     private boolean play = true;
+    private Player[] players;
 
     public Game() {
+    }
+
+    public Player[] setPlayers(int input){
+        Scanner scan = new Scanner(System.in);
+        players = new Player[input];
+        int balance;
+
+        switch (input){
+            case 2: balance = 20; break;
+            case 3: balance = 18; break;
+            case 4: balance = 16; break;
+            default: balance = 0;
+        }
+
+        for(int i = 0; i < players.length; i++){
+            System.out.println("Plase enter your name");
+            String name = scan.nextLine();
+            players[i] = new Player(name,balance);
+        }
+        return players;
     }
 
     /**
