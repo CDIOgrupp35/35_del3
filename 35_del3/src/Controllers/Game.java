@@ -83,13 +83,9 @@ public class Game {
      * @param player1 A player in the game.
      * @param player2 A player in the game.
      */
-    public void showTurn(Player player1, Player player2) {
+    public void showTurn(Player player) {
         if (play) {
-            if (player1.getIsTurn()) {
-                System.out.println("\n " + player1.getName() + jText.get("turn"));
-            } else if (player2.getIsTurn()) {
-                System.out.println("\n " + player2.getName() + jText.get("turn"));
-            }
+            gui_codebehind.GUI_BoardController.showMessage(player.getName() + "din tur"); //TODO fix this when gui is implemented
 
         }
     }
