@@ -2,6 +2,9 @@ package Player;
 import Controllers.*;
 
 public class Player {
+    /**
+     *
+     */
     private Balance balance;
     //private GameBoard gameBoard = new GameBoard();
     private boolean isTurn; // TODO should be removed ad turn will be runned by for loop now
