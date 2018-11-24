@@ -30,7 +30,6 @@ public class GameBoard {
         }
     }
 
-
     public void passStart(Player player, int pastStart){
         player.setLocation(0+pastStart);
         player.getBalance().addPoints(2);
