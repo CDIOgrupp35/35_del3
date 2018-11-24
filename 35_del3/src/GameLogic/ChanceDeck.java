@@ -14,6 +14,8 @@ public class ChanceDeck {
         assignCards();
     }
 
+
+    // method to assign chance cards information
     private void assignCards() {
         for (int i = 0; i < deck.length; i++) {
             if (i >= 0 && i < 3) {
@@ -34,6 +36,8 @@ public class ChanceDeck {
 
     }
 
+
+    // method that pulls a chance card from top of deck
     public ChanceCard pullCard() {
         ChanceCard pulled = deck[0];
         for (int i = 0; i < deck.length; i++) {
@@ -44,6 +48,7 @@ public class ChanceDeck {
         return pulled;
     }
 
+    //Method that shuffles the deck of change cards
     public void shuffleCards() {
 
         ChanceCard[] shuffled = new ChanceCard[deck.length];
@@ -68,31 +73,7 @@ public class ChanceDeck {
             }
 
 
-
-
-
-
-
-
-
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
