@@ -1,5 +1,6 @@
 package Squares;
 import Player.Player;
+import Controllers.*;
 
 public class Jail extends Square {
 
@@ -11,6 +12,6 @@ public class Jail extends Square {
     }
 
     public void landOn(Player player){
-        player.setLocation(jail);
+        player.setLocation(GameBoard.getSquare(6));
     }
 }
