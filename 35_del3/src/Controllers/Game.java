@@ -1,5 +1,7 @@
 package Controllers;
 import java.util.Scanner;
+
+import GameLogic.GameRules;
 import Player.*;
 
 public class Game {
@@ -32,7 +34,7 @@ public class Game {
     }
 
     public void playTurn(Player player){
-        player.setLocation(masterDice.roll();
+        GameRules.movePlayer(player, masterDice.roll());
         GameBoard.getSquare(player.getLocation()).landOn(player);
 
     }
