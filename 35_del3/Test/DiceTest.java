@@ -1,4 +1,4 @@
-import Player.Dice;
+import Game.Dice;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
@@ -79,7 +79,7 @@ class DiceTest {
 
     }
 
-    /** Testingg the addition of the Player.Dice.Sum method with set-values
+    /** Testingg the addition of the Game.Dice.Sum method with set-values
     @<expectedResult> test returns true, addition of two integers
     @<actualResult> test returned true, successful addition of two integers */
     @Test

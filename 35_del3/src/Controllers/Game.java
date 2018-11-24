@@ -1,8 +1,8 @@
 package Controllers;
 import java.util.Scanner;
 
-import GameLogic.GameRules;
-import Player.*;
+import Game.*;
+import Game.Player.*;
 
 public class Game {
     private Dice masterDice = new Dice(1,6);
@@ -45,7 +45,7 @@ public class Game {
 //     * @param playerOne The player whose turn is next.
 //     * @param playerTwo The player whose turn is over.
 //     */
-//    public void turnSwitch(Player playerOne, Player playerTwo) {
+//    public void turnSwitch(Game.Player playerOne, Game.Player playerTwo) {
 //        playerOne.setTurn(true);
 //        playerTwo.setTurn(false);
 //    }
@@ -60,7 +60,7 @@ public class Game {
 //     * @param playerTwo The player whose turn it isn't.
 //     * @param diceRoll The sum of the eyes of the roll.
 //     */
-//    public void playTurn(Player playerOne, Player playerTwo, int diceRoll) {
+//    public void playTurn(Game.Player playerOne, Game.Player playerTwo, int diceRoll) {
 //
 //
 //        System.out.println(playerOne.getName() + jText.get("balance") + playerOne.balance.getPoints());
@@ -75,7 +75,7 @@ public class Game {
 //     * @param player1 A player in the game.
 //     * @param player2 A player in the game.
 //     */
-//    public void winGame(Player player1, Player player2) {
+//    public void winGame(Game.Player player1, Game.Player player2) {
 //        if (player1.getBalance().getPoints() >= winCon) {
 //            play = false;
 //            System.out.println(player1.getName() + jText.get("win"));
@@ -91,7 +91,7 @@ public class Game {
 //     * @param player1 A player in the game.
 //     * @param player2 A player in the game.
 //     */
-//    public void showTurn(Player player) {
+//    public void showTurn(Game.Player player) {
 //        if (play) {
 //            gui_codebehind.GUI_BoardController.showMessage(player.getName() + "din tur"); //TODO fix this when gui is implemented
 //
@@ -109,7 +109,7 @@ public class Game {
 //     * @param player1 A player in the game.
 //     * @param player2 A player in the game.
 //     */
-//    public void playing(int input, Player player1, Player player2) {
+//    public void playing(int input, Game.Player player1, Game.Player player2) {
 //            if (input == 1) {
 //                if (player1.getIsTurn()) {
 //                    masterDice.roll();

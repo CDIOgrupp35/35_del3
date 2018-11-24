@@ -1,6 +1,5 @@
-package GameLogic;
-import Player.*;
-import Controllers.*;
+package Game;
+import Game.Player.*;
 
 public class ChanceCard {
     Player player;

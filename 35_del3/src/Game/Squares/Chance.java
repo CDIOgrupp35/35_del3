@@ -1,6 +1,6 @@
-package Squares;
-import GameLogic.ChanceDeck;
-import Player.Player;
+package Game.Squares;
+import Game.ChanceDeck;
+import Game.Player.Player;
 
 public class Chance extends Square {
 

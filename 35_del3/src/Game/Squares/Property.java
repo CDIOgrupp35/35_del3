@@ -1,6 +1,6 @@
-package Squares;
+package Game.Squares;
 
-import Player.Player;
+import Game.Player.Player;
 
 public class Property extends Square {
     private int price;
