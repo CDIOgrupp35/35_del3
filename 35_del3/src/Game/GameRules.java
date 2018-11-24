@@ -1,6 +1,5 @@
-package GameLogic;
-import Controllers.*;
-import Player.*;
+package Game;
+import Game.Player.*;
 
 public class GameRules {
     private GameBoard gameboard = new GameBoard(); //TODO smid ind i main!

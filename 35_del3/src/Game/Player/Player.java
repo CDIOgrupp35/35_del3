@@ -1,5 +1,4 @@
-package Player;
-import Controllers.*;
+package Game.Player;
 
 public class Player {
     /**

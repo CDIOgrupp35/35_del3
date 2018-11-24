@@ -1,5 +1,5 @@
-package Controllers;
-import Squares.*;
+package Game;
+import Game.Squares.*;
 
 public class GameBoard {
 

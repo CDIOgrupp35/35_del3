@@ -1,5 +1,5 @@
 import Controllers.*;
-import Player.*;
+import Game.Player.*;
 
 import java.io.IOException;
 import java.io.FileNotFoundException;

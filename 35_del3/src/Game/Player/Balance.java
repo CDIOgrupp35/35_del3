@@ -1,4 +1,4 @@
-package Player;
+package Game.Player;
 
 public class Balance {
     private int points;

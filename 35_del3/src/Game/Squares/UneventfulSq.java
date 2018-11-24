@@ -1,5 +1,5 @@
-package Squares;
-import Player.Player;
+package Game.Squares;
+import Game.Player.Player;
 
 public class UneventfulSq extends Square {
 

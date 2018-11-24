@@ -1,6 +1,5 @@
-package Squares;
-import Player.Player;
-import Controllers.*;
+package Game.Squares;
+import Game.Player.Player;
 
 public class Jail extends Square {
 

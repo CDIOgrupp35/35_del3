@@ -1,5 +1,5 @@
 import Controllers.Game;
-import Player.Player;
+import Game.Player.Player;
 import org.json.simple.JSONObject;
 import org.junit.jupiter.api.Test;
 
