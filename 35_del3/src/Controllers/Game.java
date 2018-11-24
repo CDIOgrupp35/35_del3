@@ -6,9 +6,9 @@ import Game.Player.*;
 
 public class Game {
     private Dice masterDice = new Dice(1,6);
-    private int winCon = 3000;
     private boolean play = true;
     private Player[] players;
+    private GameBoard board = new GameBoard();
 
     public Game() {
     }
