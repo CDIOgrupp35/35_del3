@@ -6,15 +6,16 @@ import Game.Player.*;
 
 public class Game {
     private Dice masterDice = new Dice(1,6);
-    private int winCon = 3000;
     private boolean play = true;
     private Player[] players;
+    private GameBoard board = new GameBoard();
+    private GameRules rules = new GameRules();
 
     public Game() {
     }
 
     public Player[] setPlayers(int input){
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // TODO brug GUI
         players = new Player[input];
         int balance;
 
@@ -26,7 +27,7 @@ public class Game {
         }
 
         for(int i = 0; i < players.length; i++){
-            System.out.println("Plase enter your name");
+            System.out.println("Plase enter your name"); //TODO
             String name = scan.nextLine();
             players[i] = new Player(name,balance);
         }
@@ -34,8 +35,9 @@ public class Game {
     }
 
     public void playTurn(Player player){
-        GameRules.movePlayer(player, masterDice.roll());
-        GameBoard.getSquare(player.getLocation()).landOn(player);
+        rules.movePlayer(player, masterDice.roll());
+        board.getSquare(player.getLocation()).landOn(player);
+
     }
 
 //    /**

@@ -15,7 +15,7 @@ public class GameBoard {
             if(i == 0){
                 squares[i] = new UneventfulSq(i, "START");
             }else if (i == 3 || i == 9 || i == 15 || i == 21){
-                squares[i] = new Chance(i, "CHANCE"); //TODO modify after Chance class have been implemented
+                squares[i] = new Chance(i, "CHANCE", deck); //TODO modify after Chance class have been implemented
             }else if (i == 6){
                 squares[i] = new UneventfulSq(i, "PÅ BESØG");
             }else if(i == 12){
