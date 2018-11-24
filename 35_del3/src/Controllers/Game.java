@@ -36,7 +36,7 @@ public class Game {
     public void playTurn(Player player){
         masterDice.roll();
         board.movePlayer(player, masterDice.getFaceValue(1));
-        board.getSquare(player.getLocation()).landOn(player);
+        board.getSquares()[player.getLocation()].landOn(player);
 
     }
 

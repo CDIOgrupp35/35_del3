@@ -42,9 +42,5 @@ public class GameBoard {
             passStart(player, player.getLocation() - squares.length);
     }
 
-    public Square getSquare(int numer){
-        return squares[numer];
-    }
-
     public Square[] getSquares(){return squares;}
 }
