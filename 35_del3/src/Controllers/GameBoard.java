@@ -29,5 +29,9 @@ public class GameBoard {
         }
     }
 
+    public Square getSquare(int numer){
+        return squares[numer];
+    }
+
     public Square[] getSquares(){return squares;}
 }
