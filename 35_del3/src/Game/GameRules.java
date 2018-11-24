@@ -39,5 +39,4 @@ public class GameRules {
         return players[i];
     }
 
-
 }

@@ -36,7 +36,6 @@ public class Game {
     public void playTurn(Player player){
         GameRules.movePlayer(player, masterDice.roll());
         GameBoard.getSquare(player.getLocation()).landOn(player);
-
     }
 
 //    /**
