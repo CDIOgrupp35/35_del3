@@ -9,6 +9,7 @@ public class Game {
     private boolean play = true;
     private Player[] players;
     private GameBoard board = new GameBoard();
+    private GameRules rules = new GameRules();
 
     public Game() {
     }
@@ -34,8 +35,8 @@ public class Game {
     }
 
     public void playTurn(Player player){
-        GameRules.movePlayer(player, masterDice.roll());
-        GameBoard.getSquare(player.getLocation()).landOn(player);
+        rules.movePlayer(player, masterDice.roll());
+        board.getSquare(player.getLocation()).landOn(player);
 
     }
 
