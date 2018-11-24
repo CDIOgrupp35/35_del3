@@ -7,7 +7,7 @@ public class Player {
      */
     private Balance balance;
     //private GameBoard gameBoard = new GameBoard();
-    private boolean isTurn; // TODO should be removed ad turn will be runned by for loop now
+    private boolean isTurn; // TODO should be removed and turn will be run by for loop now
     private String playerName;
     private int location;
 
