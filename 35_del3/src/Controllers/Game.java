@@ -14,7 +14,7 @@ public class Game {
     }
 
     public Player[] setPlayers(int input){
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // TODO brug GUI
         players = new Player[input];
         int balance;
 
@@ -26,7 +26,7 @@ public class Game {
         }
 
         for(int i = 0; i < players.length; i++){
-            System.out.println("Plase enter your name");
+            System.out.println("Plase enter your name"); //TODO
             String name = scan.nextLine();
             players[i] = new Player(name,balance);
         }
