@@ -1,4 +1,5 @@
 package Game;
+import Game.Player.Player;
 import Game.Squares.*;
 
 public class GameBoard {
@@ -27,6 +28,18 @@ public class GameBoard {
                 count ++;
             }
         }
+    }
+
+
+    public void passStart(Player player, int pastStart){
+        player.setLocation(0+pastStart);
+        player.getBalance().addPoints(2);
+    }
+
+    public void movePlayer(Player player, int roll) { //TODO undgå out of bounds
+        player.setLocation(player.getLocation() + roll);
+        if (player.getLocation() > squares.length)
+            passStart(player, player.getLocation() - squares.length);
     }
 
     public Square getSquare(int numer){
