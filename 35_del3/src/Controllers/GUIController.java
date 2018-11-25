@@ -1,4 +1,5 @@
 package Controllers;
+import Game.Player.Player;
 import gui_main.GUI;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Start;
@@ -12,6 +13,7 @@ import Game.Squares.*;
 
 public class GUIController {
     GUI gui = new GUI();
+
 
     public GUI_Field[] createGUIFields(Square[] squares){
         GUI_Field[] guiFields = new GUI_Field[squares.length];
@@ -32,11 +34,27 @@ public class GUIController {
         return guiFields;
     }
 
-    public void createBoard(GUI_Field[] guiFields){
+    public void createBoard(GUI_Field[] guiFields, Square[] squares){
         GUI_Board gBoard = new GUI_Board(guiFields);
+        Property prop = new Property();
         for (int i = 0; i<guiFields.length; i++){
-            guiFields[i].getTitle();
+            guiFields[i].setTitle(squares[i].getSqName());
+            if(squares[i].equals(prop))
+            guiFields[i].setDescription("M" + squares[i].getPrice());
         }
+    }
+
+    public void addPlayers(GUI_Player[] guiPlayers){
+        for(int i = 0; i<guiPlayers.length; i++)
+            gui.addPlayer(guiPlayers[i]);
+    }
+
+    public GUI_Player[] createPlayers(Player[] players){
+        GUI_Player[] gPlayers = new GUI_Player[players.length];
+        for (int i =0; i<players.length; i++){
+            gPlayers[i] = new GUI_Player(players[i].getName(), players[i].getBalance().getPoints());
+        }
+        return gPlayers;
     }
 
     public void showMessage(String message){

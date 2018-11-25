@@ -19,6 +19,8 @@ public class Property extends Square {
         this.price = price;
     }
 
+    public Property(){}
+
     /**Method applying changes to a players' balance depending on the vacancy of the property.
      *
      * @param player
