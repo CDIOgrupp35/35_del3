@@ -9,7 +9,6 @@ public class Game {
     private boolean play = true;
     private Player[] players;
     private GameBoard board = new GameBoard();
-    private GameRules rules = new GameRules();
 
     public Game() {
     }
@@ -35,9 +34,35 @@ public class Game {
     }
 
     public void playTurn(Player player){
-        rules.movePlayer(player, masterDice.roll());
-        board.getSquare(player.getLocation()).landOn(player);
+        masterDice.roll();
+        board.movePlayer(player, masterDice.getFaceValue(1));
+        board.getSquares()[player.getLocation()].landOn(player);
 
+    }
+
+    public boolean endGame(Player[] players){
+        for (int i = 0; i <players.length; i++){
+            if(players[i].getBalance().getPoints() <= 0)
+                return true;
+        }
+        return false;
+    }
+
+    public Player winner(Player[] players){
+        int i = 0;
+        while (i < players.length){
+            int win = 0;
+            for (int j = 0; j < players.length; j++){
+                if (i!= j && players[i].getBalance().getPoints() > players[j].getBalance().getPoints()){ //TODO
+                    win++;
+                }
+            }
+            if (win == players.length-1){
+                break;
+            }
+            else i++;
+        }
+        return players[i];
     }
 
 //    /**

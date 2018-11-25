@@ -4,7 +4,6 @@ import Game.Player.*;
 public class ChanceCard {
     Player player;
     GameBoard gameboard;
-    GameRules gRule;
     String cardName;
     String CardText;
     int cardEffect;
@@ -18,10 +17,10 @@ public class ChanceCard {
     public void executeEffect(Player player){
         switch (cardEffect) {
             case 1:
-                gRule.passStart(player, 0);
+                gameboard.passStart(player, 0);
                 break;
             case 2:
-                gRule.movePlayer(player, 5);
+                gameboard.movePlayer(player, 5);
                 break;
             case 3:
                 player.getBalance().subPoints(2);
