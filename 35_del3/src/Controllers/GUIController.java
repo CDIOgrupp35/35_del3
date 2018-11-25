@@ -57,6 +57,13 @@ public class GUIController {
         return gPlayers;
     }
 
+    public void updatePlayerLocation(Player [] players, GUI_Field[] gFields, GUI_Player[] gPlayers){
+        for (int i =0; i<gFields.length; i++)
+            gFields[i].removeAllCars();
+        for (int i = 0; i<players.length; i++)
+            gFields[players[i].getLocation()].setCar(gPlayers[i], true);
+    }
+
     public void showMessage(String message){
         gui.showMessage(message);
     }
