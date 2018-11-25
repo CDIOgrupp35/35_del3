@@ -7,6 +7,7 @@ import gui_fields.GUI_Jail;
 import gui_fields.GUI_Player;
 import gui_fields.GUI_Refuge;
 import gui_fields.GUI_Street;
+import gui_fields.GUI_Board;
 import Game.Squares.*;
 
 public class GUIController {
@@ -29,6 +30,13 @@ public class GUIController {
             }
         }
         return guiFields;
+    }
+
+    public void createBoard(GUI_Field[] guiFields){
+        GUI_Board gBoard = new GUI_Board(guiFields);
+        for (int i = 0; i<guiFields.length; i++){
+            guiFields[i].getTitle();
+        }
     }
 
     public void showMessage(String message){

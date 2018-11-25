@@ -13,4 +13,6 @@ public abstract class Square {
     public void landOn(Player player){
 
     }
+
+    public String getSqName(){return sqName;}
 }
