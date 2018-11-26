@@ -40,7 +40,7 @@ public class GUIController {
         for (int i = 0; i<guiFields.length; i++){
             guiFields[i].setTitle(squares[i].getSqName());
             if(squares[i].equals(prop))
-            guiFields[i].setDescription("M" + squares[i].getPrice());
+            guiFields[i].setSubText("M" + squares[i].getPrice());
         }
     }
 

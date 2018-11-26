@@ -42,8 +42,10 @@ public class Game {
 
     public boolean endGame(Player[] players){
         for (int i = 0; i <players.length; i++){
-            if(players[i].getBalance().getPoints() <= 0)
+            if(players[i].getBalance().getPoints() <= 0) {
+                play = false;
                 return true;
+            }
         }
         return false;
     }
