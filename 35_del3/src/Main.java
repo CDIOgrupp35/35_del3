@@ -25,11 +25,11 @@ public class Main{
         GUI_Player[] guiPlayersArr = gui.createPlayers(playersArr);
         gui.addPlayers(guiPlayersArr);
 
-        while (play){
+        while (monopoly.getPlay()){
             for (int i = 0; i < playersArr.length; i++){
                 monopoly.playTurn(playersArr[i]);
                 if (monopoly.endGame(playersArr)){
-                    play = false;
+                    monopoly.setPlay(false);
                     break;
                 }
             }

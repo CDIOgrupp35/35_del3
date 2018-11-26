@@ -73,6 +73,8 @@ public class Game {
 
     public boolean getPlay(){return play;}
 
+    public void setPlay(boolean play) {this.play = play;}
+
     //    /**
 //     * Passes the turn to the next player
 //     *
