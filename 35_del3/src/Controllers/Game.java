@@ -71,6 +71,8 @@ public class Game {
 
     public Player[] getPlayers() { return players;}
 
+    public boolean getPlay(){return play;}
+
     //    /**
 //     * Passes the turn to the next player
 //     *
