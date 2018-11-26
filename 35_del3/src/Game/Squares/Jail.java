@@ -11,6 +11,6 @@ public class Jail extends Square {
     }
 
     public void landOn(Player player){
-        player.setLocation(GameBoard.getSquare(6));
+        player.setLocation(6);
     }
 }

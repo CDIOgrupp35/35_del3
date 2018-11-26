@@ -21,10 +21,20 @@ public class Main{
 
         // Spillere instantieres og Gui sættes op
         int participants = 4;
-        monopoly.setPlayers(participants);
-        GUI_Player[] guiPlayersArr = gui.createPlayers(monopoly.getPlayers());
+        Player[] playersArr = monopoly.setPlayers(participants);
+        GUI_Player[] guiPlayersArr = gui.createPlayers(playersArr);
         gui.addPlayers(guiPlayersArr);
 
+        while (play){
+            for (int i = 0; i < playersArr.length; i++){
+                monopoly.playTurn(playersArr[i]);
+                if (monopoly.endGame(playersArr)){
+                    play = false;
+                    break;
+                }
+            }
+        }
+        monopoly.winner(playersArr);
 
 
 //        String jFile = "";
