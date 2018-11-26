@@ -42,14 +42,19 @@ public class GUIController {
                 guiFields[i].setSubText("M" + squares[i].getPrice());
             }
             else if (squares[i] instanceof Jail){
-                guiFields[i].setSubText("fængsel");
+                guiFields[i].setSubText("FÆNGSEL");
+                guiFields[i].setDescription("GÅ I FÆNGSEL");
             }
             else if (squares[i] instanceof UneventfulSq){
                 if (squares[i].getSqName().equalsIgnoreCase("Start")){
                     guiFields[i].setSubText("");
                 }
                 else if (squares[i].getSqName().equalsIgnoreCase("På besøg")){
-                    guiFields[i].setSubText("");
+                    guiFields[i].setSubText("PÅ BESØG");
+                }
+                else if (squares[i].getSqName().equalsIgnoreCase("Gratis Parkering")){
+                    guiFields[i].setSubText("PARKERING");
+                    guiFields[i].setDescription("GRATIS PARKERING");
                 }
             }
         }
