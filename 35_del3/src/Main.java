@@ -28,8 +28,9 @@ public class Main{
         while (monopoly.getPlay()){
             for (int i = 0; i < playersArr.length; i++){
                 monopoly.playTurn(playersArr[i]);
-                gui.showRoll();
+                gui.showRoll(monopoly.getMasterDice().getFaceValue(1));
                 gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
+                //TODO square message
                 if (monopoly.endGame(playersArr)){
                     monopoly.setPlay(false);
                     break;
