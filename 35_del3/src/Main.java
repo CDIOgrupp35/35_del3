@@ -1,4 +1,5 @@
 import Controllers.*;
+import Game.*;
 import Game.Player.*;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Player;
@@ -11,7 +12,9 @@ public class Main{
 
     public static void main(String[] args) {
 
-        Game monopoly = new Game();
+        GameBoard board = new GameBoard();
+
+        Game monopoly = new Game(board);
         GUIController gui = new GUIController();
 
         // Opsætning af GuiBoard
@@ -20,7 +23,7 @@ public class Main{
 
 
         // Spillere instantieres og Gui sættes op
-        int participants = 4;
+        int participants = 2;
         Player[] playersArr = monopoly.setPlayers(participants);
         GUI_Player[] guiPlayersArr = gui.createPlayers(playersArr);
         gui.addPlayers(guiPlayersArr);

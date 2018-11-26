@@ -35,13 +35,25 @@ public class GUIController {
     }
 
     public void createBoard(GUI_Field[] guiFields, Square[] squares){
-        GUI_Board gBoard = new GUI_Board(guiFields);
         Property prop = new Property();
         for (int i = 0; i<guiFields.length; i++){
             guiFields[i].setTitle(squares[i].getSqName());
-            if(squares[i].equals(prop))
-            guiFields[i].setSubText("M" + squares[i].getPrice());
+            if(squares[i] instanceof Property) {
+                guiFields[i].setSubText("M" + squares[i].getPrice());
+            }
+            else if (squares[i] instanceof Jail){
+                guiFields[i].setSubText("fængsel");
+            }
+            else if (squares[i] instanceof UneventfulSq){
+                if (squares[i].getSqName().equalsIgnoreCase("Start")){
+                    guiFields[i].setSubText("");
+                }
+                else if (squares[i].getSqName().equalsIgnoreCase("På besøg")){
+                    guiFields[i].setSubText("");
+                }
+            }
         }
+        GUI_Board gBoard = new GUI_Board(guiFields);
     }
 
     public void addPlayers(GUI_Player[] guiPlayers){

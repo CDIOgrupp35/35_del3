@@ -8,9 +8,10 @@ public class Game {
     private Dice masterDice = new Dice(1,6);
     private boolean play = true;
     private Player[] players;
-    private GameBoard board = new GameBoard();
+    private GameBoard board;
 
-    public Game() {
+    public Game(GameBoard gBoard) {
+        board = gBoard;
     }
 
     public Player[] setPlayers(int input){
