@@ -75,6 +75,8 @@ public class Game {
 
     public void setPlay(boolean play) {this.play = play;}
 
+    public Dice getMasterDice() {return masterDice;}
+
     //    /**
 //     * Passes the turn to the next player
 //     *

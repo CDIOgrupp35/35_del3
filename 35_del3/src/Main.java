@@ -28,6 +28,8 @@ public class Main{
         while (monopoly.getPlay()){
             for (int i = 0; i < playersArr.length; i++){
                 monopoly.playTurn(playersArr[i]);
+                gui.showRoll();
+                gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
                 if (monopoly.endGame(playersArr)){
                     monopoly.setPlay(false);
                     break;
