@@ -65,7 +65,11 @@ public class Game {
         return players[i];
     }
 
-//    /**
+    public GameBoard getBoard(){ return board;}
+
+    public Player[] getPlayers() { return players;}
+
+    //    /**
 //     * Passes the turn to the next player
 //     *
 //     * @param playerOne The player whose turn is next.
