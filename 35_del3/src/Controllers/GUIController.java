@@ -92,16 +92,7 @@ public class GUIController {
         gui.setDie(roll);
     }
 
-    public void showTurn(String jakobHarMerit){
-        gui.showMessage(jakobHarMerit);
+    public void showTurn(String turn){
+        gui.showMessage(turn);
     }
-
-    public GUI_Car[] createGUICars(Player[] players){
-        GUI_Car[] gCars = new GUI_Car[players.length];
-        for (int i = 0; i<gCars.length; i++){
-            gCars[i] = new GUI_Car();
-        }
-        return gCars;
-    }
-
 }
