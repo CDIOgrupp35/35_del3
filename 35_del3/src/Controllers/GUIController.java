@@ -100,8 +100,11 @@ public class GUIController {
         gui.getUserButtonPressed(text, opt1, opt2, opt3);
     }
 
+    public int enterInt(){
+        return gui.getUserInteger("Indtast venligst antallet af spillere (2-4)", 2, 4);
+    }
+
     public String makeText(String disText){
-        gui.getUserString(disText);
-        return disText;
+        return gui.getUserString(disText);
     }
 }

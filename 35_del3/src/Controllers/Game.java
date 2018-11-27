@@ -31,9 +31,9 @@ public class Game {
         }
 
         for(int i = 0; i < players.length; i++){
-            //gui.showMessage("Venligst indtast dit navn");
-            System.out.println("Spiller " + (i+1) + " indtast venligst dit navn");
-            String name = scan.nextLine();
+            //System.out.println("Spiller " + (i+1) + " indtast venligst dit navn");
+            //String name = scan.nextLine();
+            String name = gui.makeText("Venligst indtast dit navn");
             players[i] = new Player(name,balance);
         }
         return players;
