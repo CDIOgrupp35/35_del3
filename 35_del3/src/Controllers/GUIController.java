@@ -15,7 +15,7 @@ import Game.Squares.*;
 import java.awt.*;
 
 public class GUIController {
-    GUI gui = new GUI();
+    GUI gui;
 
 
     public GUI_Field[] createGUIFields(Square[] squares){
@@ -61,6 +61,7 @@ public class GUIController {
                 }
             }
         }
+        gui = new GUI(guiFields);
     }
 
     public void addPlayers(GUI_Player[] guiPlayers){
@@ -102,6 +103,5 @@ public class GUIController {
         }
         return gCars;
     }
-
 
 }
