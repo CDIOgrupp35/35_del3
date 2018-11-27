@@ -6,7 +6,7 @@ public class Dice {
     private Random random = new Random();
     private int sides;
     private int diceAmount;
-    private int diceArray[] = new int[diceAmount];
+    private int diceArray[];
 
     /**
      * Constructs a Game.Dice object
@@ -17,6 +17,7 @@ public class Dice {
     public Dice (int noDice, int noSide ) {
         sides = noSide;
         diceAmount = noDice;
+        this.diceArray = new int[diceAmount];
     }
 
     /**
@@ -25,7 +26,7 @@ public class Dice {
      * @return an int[] array containing the face values of the dice.
      */
     public int[] roll() {
-        for(int i = 0; i <= diceAmount; i++) {
+        for(int i = 0; i < diceAmount; i++) {
             diceArray[i] = random.nextInt(sides) + 1;
         }
         return diceArray;
