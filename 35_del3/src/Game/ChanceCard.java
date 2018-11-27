@@ -2,7 +2,6 @@ package Game;
 import Game.Player.*;
 
 public class ChanceCard {
-    Player player;
     GameBoard gameboard;
     String cardName;
     String CardText;
@@ -17,10 +16,14 @@ public class ChanceCard {
     public void executeEffect(Player player){
         switch (cardEffect) {
             case 1:
-                gameboard.passStart(player, 0);
+                player.setLocation(0);
+                player.getBalance().addPoints(2);
                 break;
             case 2:
-                gameboard.movePlayer(player, 5);
+                if(player.getLocation() + 5 < 23)
+                    player.setLocation(player.getLocation()+5);
+                else
+                    player.setLocation(player.getLocation()+ 5 - 23);
                 break;
             case 3:
                 player.getBalance().subPoints(2);
@@ -33,7 +36,6 @@ public class ChanceCard {
                 break;
             case 6:
                 player.setLocation(6);
-                gameboard.getSquares()[6].landOn(player);
         }
     }
 }

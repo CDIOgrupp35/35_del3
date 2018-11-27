@@ -3,7 +3,7 @@ import Game.*;
 import Game.Player.*;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Player;
-
+import gui_codebehind.GUI_BoardController;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -17,17 +17,16 @@ public class Main{
         Game monopoly = new Game(board, gui);
         Scanner scan = new Scanner(System.in);
 
+        //Opsætning af GUIBoard
+        GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
+        gui.createBoard(guiFields, monopoly.getBoard().getSquares());
+
         gui.showMessage("Angiv antallet af spillere (2-4)");
         int participants = scan.nextInt();
         Player[] playersArr = new Player[participants];
         if (participants >= 2 && participants <= 4){
             playersArr = monopoly.setPlayers(participants);
         }
-
-
-        // Opsætning af GuiBoard
-        GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
-        gui.createBoard(guiFields, monopoly.getBoard().getSquares());
 
 
         // Spillere instantieres og Gui sættes op
@@ -37,7 +36,7 @@ public class Main{
         while (monopoly.getPlay()){
             for (int i = 0; i < playersArr.length; i++){
                 monopoly.playTurn(playersArr[i]);
-                gui.showRoll(monopoly.getDie().getFaceValue(1));
+                gui.showRoll(monopoly.getDie().getFaceValue(0));
                 gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
                 //TODO square message
                 if (monopoly.endGame(playersArr)){

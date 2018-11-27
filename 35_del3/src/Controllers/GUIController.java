@@ -8,12 +8,14 @@ import gui_fields.GUI_Jail;
 import gui_fields.GUI_Player;
 import gui_fields.GUI_Refuge;
 import gui_fields.GUI_Street;
-import gui_fields.GUI_Board;
+import gui_fields.GUI_Car;
 
 import Game.Squares.*;
 
+import java.awt.*;
+
 public class GUIController {
-    GUI gui = new GUI();
+    GUI gui;
 
 
     public GUI_Field[] createGUIFields(Square[] squares){
@@ -59,6 +61,7 @@ public class GUIController {
                 }
             }
         }
+        gui = new GUI(guiFields);
     }
 
     public void addPlayers(GUI_Player[] guiPlayers){
@@ -89,10 +92,7 @@ public class GUIController {
         gui.setDie(roll);
     }
 
-    public void showTurn(String jakobHarMerit){
-        gui.showMessage(jakobHarMerit);
+    public void showTurn(String turn){
+        gui.showMessage(turn);
     }
-
-
-
 }
