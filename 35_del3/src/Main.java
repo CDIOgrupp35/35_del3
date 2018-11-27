@@ -17,7 +17,7 @@ public class Main{
         Game monopoly = new Game(board, gui);
         Scanner scan = new Scanner(System.in);
 
-        // Opsætning af GuiBoard
+        //Opsætning af GUIBoard
         GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
         gui.createBoard(guiFields, monopoly.getBoard().getSquares());
 
@@ -27,8 +27,6 @@ public class Main{
         if (participants >= 2 && participants <= 4){
             playersArr = monopoly.setPlayers(participants);
         }
-
-
 
 
         // Spillere instantieres og Gui sættes op
