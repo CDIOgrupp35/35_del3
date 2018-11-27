@@ -100,7 +100,8 @@ public class GUIController {
         gui.getUserButtonPressed(text, opt1, opt2, opt3);
     }
 
-    public void makeText(String disText){
+    public String makeText(String disText){
         gui.getUserString(disText);
+        return disText;
     }
 }
