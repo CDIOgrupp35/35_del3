@@ -5,17 +5,19 @@ import Game.*;
 import Game.Player.*;
 
 public class Game {
-    private Dice masterDice = new Dice(1,6);
+    private Dice die = new Dice(1,6);
     private boolean play = true;
     private Player[] players;
-    private GameBoard board;
+    private GameBoard board = new GameBoard();
+    private GUIController gui;
 
-    public Game(GameBoard gBoard) {
+    public Game(GameBoard gBoard, GUIController gui) {
         board = gBoard;
+        this.gui = gui;
     }
 
     public Player[] setPlayers(int input){
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // TODO brug GUI
         players = new Player[input];
         int balance;
 
@@ -27,7 +29,7 @@ public class Game {
         }
 
         for(int i = 0; i < players.length; i++){
-            System.out.println("Plase enter your name"); //TODO
+            gui.showMessage("Venligst indtast dit navn");
             String name = scan.nextLine();
             players[i] = new Player(name,balance);
         }
@@ -35,8 +37,8 @@ public class Game {
     }
 
     public void playTurn(Player player){
-        masterDice.roll();
-        board.movePlayer(player, masterDice.getFaceValue(1));
+        die.roll();
+        board.movePlayer(player, die.getFaceValue(1));
         board.getSquares()[player.getLocation()].landOn(player);
 
     }
@@ -76,7 +78,7 @@ public class Game {
 
     public void setPlay(boolean play) {this.play = play;}
 
-    public Dice getMasterDice() {return masterDice;}
+    public Dice getDie() {return die;}
 
     //    /**
 //     * Passes the turn to the next player

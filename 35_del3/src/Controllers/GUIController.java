@@ -58,7 +58,6 @@ public class GUIController {
                 }
             }
         }
-        GUI_Board gBoard = new GUI_Board(guiFields);
     }
 
     public void addPlayers(GUI_Player[] guiPlayers){
