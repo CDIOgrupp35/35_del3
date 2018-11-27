@@ -44,6 +44,7 @@ public class Game {
         die.roll();
         board.movePlayer(player, die.getFaceValue(0));
         board.getSquares()[player.getLocation()].landOn(player);
+        gui.updatePlayerBalance(players);
 
     }
 
