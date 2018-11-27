@@ -10,13 +10,19 @@ public class GameBoard {
                                             "Dyrehandlen", "Bowlinghallen", "Zoologisk Have", "Vandlandet", "Strandpromenaden"};
     private int[] pPrice = new int[]{1,1,1,1,2,2,2,2,3,3,3,3,4,4,5,5};
     private ChanceDeck cDeck = new ChanceDeck();
+
     public GameBoard(){
+        setUpSquares();
+        cDeck.shuffleCards();
+    }
+
+    private void setUpSquares(){
         int count = 0;
         for(int i = 0; i < squares.length; i++){
             if(i == 0){
                 squares[i] = new UneventfulSq(i, "START");
             }else if (i == 3 || i == 9 || i == 15 || i == 21){
-                squares[i] = new Chance(i, "CHANCE", cDeck); //TODO modify after Chance class have been implemented
+                squares[i] = new Chance(i, "CHANCE", cDeck);
             }else if (i == 6){
                 squares[i] = new Jail(i,"FÆNGSEL", 1);
             }else if(i == 12){
