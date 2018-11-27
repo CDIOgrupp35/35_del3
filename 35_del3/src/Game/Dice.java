@@ -6,7 +6,7 @@ public class Dice {
     private Random random = new Random();
     private int sides;
     private int diceAmount;
-    private int diceArray[] = new int[diceAmount];
+    private int diceArray[];
 
     /**
      * Constructs a Game.Dice object
@@ -17,6 +17,7 @@ public class Dice {
     public Dice (int noDice, int noSide ) {
         sides = noSide;
         diceAmount = noDice;
+        this.diceArray = new int[diceAmount];
     }
 
     /**
