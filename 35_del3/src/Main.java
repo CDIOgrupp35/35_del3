@@ -37,7 +37,7 @@ public class Main{
         while (monopoly.getPlay()){
             for (int i = 0; i < playersArr.length; i++){
                 monopoly.playTurn(playersArr[i]);
-                gui.showRoll(monopoly.getDie().getFaceValue(1));
+                gui.showRoll(monopoly.getDie().getFaceValue(0));
                 gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
                 //TODO square message
                 if (monopoly.endGame(playersArr)){
