@@ -8,12 +8,14 @@ public class Game {
     private Dice die = new Dice(1,6);
     private boolean play = true;
     private Player[] players;
-    private GameBoard board = new GameBoard();
+    private GameBoard board;
     private GUIController gui;
 
     public Game(GameBoard gBoard, GUIController gui) {
         board = gBoard;
         this.gui = gui;
+
+
     }
 
     public Player[] setPlayers(int input){
