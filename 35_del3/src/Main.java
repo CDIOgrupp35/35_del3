@@ -17,17 +17,15 @@ public class Main{
         Game monopoly = new Game(board, gui);
         Scanner scan = new Scanner(System.in);
 
+        GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
+        gui.createBoard(guiFields, monopoly.getBoard().getSquares());
+
         gui.showMessage("Angiv antallet af spillere (2-4)");
         int participants = scan.nextInt();
         Player[] playersArr = new Player[participants];
         if (participants >= 2 && participants <= 4){
             playersArr = monopoly.setPlayers(participants);
         }
-
-
-        // Opsætning af GuiBoard
-        GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
-        gui.createBoard(guiFields, monopoly.getBoard().getSquares());
 
 
         // Spillere instantieres og Gui sættes op
