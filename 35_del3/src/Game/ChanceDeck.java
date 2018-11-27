@@ -40,7 +40,7 @@ public class ChanceDeck {
     // method that pulls a chance card from top of deck
     public ChanceCard drawCard() {
         ChanceCard pulled = deck[0];
-        for (int i = 0; i < deck.length; i++) {
+        for (int i = 0; i < deck.length-1; i++) {
             deck[i] = deck[i + 1];
 
         }

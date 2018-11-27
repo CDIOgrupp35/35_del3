@@ -2,7 +2,6 @@ package Game;
 import Game.Player.*;
 
 public class ChanceCard {
-    Player player;
     GameBoard gameboard;
     String cardName;
     String CardText;
