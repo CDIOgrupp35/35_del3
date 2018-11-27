@@ -35,7 +35,7 @@ public class GUIController {
     }
 
     public void createBoard(GUI_Field[] guiFields, Square[] squares){
-        Property prop = new Property();
+
         for (int i = 0; i<guiFields.length; i++){
             guiFields[i].setTitle(squares[i].getSqName());
             if(squares[i] instanceof Property) {

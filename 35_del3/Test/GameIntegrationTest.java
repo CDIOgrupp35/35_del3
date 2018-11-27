@@ -1,7 +1,7 @@
 import Controllers.Game;
 import Game.Player.Player;
 import org.json.simple.JSONObject;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 
 class GameIntegrationTest {
 

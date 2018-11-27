@@ -1,11 +1,11 @@
-import Game.Dice;
-import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
+//import Game.Dice;
+//import org.junit.jupiter.api.RepeatedTest;
+//import org.junit.jupiter.api.Test;
 
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+//import static org.junit.Assert.assertEquals;
+//import static org.junit.Assert.assertTrue;
+//import static org.junit.Assert.fail;
 
 class DiceTest {
 

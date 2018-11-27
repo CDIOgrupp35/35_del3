@@ -13,11 +13,11 @@ public class Main{
     public static void main(String[] args) {
 
         GameBoard board = new GameBoard();
-        Game monopoly = new Game(board);
         GUIController gui = new GUIController();
+        Game monopoly = new Game(board, gui);
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Angiv antallet af spillere (2-4)");
+        gui.showMessage("Angiv antallet af spillere (2-4)");
         int participants = scan.nextInt();
         Player[] playersArr = new Player[participants];
         if (participants >= 2 && participants <= 4){
