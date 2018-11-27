@@ -27,7 +27,7 @@ public class Game {
         }
 
         for(int i = 0; i < players.length; i++){
-            System.out.println("player " + (i+1) + " Plase enter your name");
+            System.out.println("Plase enter your name"); //TODO
             String name = scan.nextLine();
             players[i] = new Player(name,balance);
         }
