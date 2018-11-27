@@ -8,7 +8,6 @@ import gui_fields.GUI_Jail;
 import gui_fields.GUI_Player;
 import gui_fields.GUI_Refuge;
 import gui_fields.GUI_Street;
-import gui_fields.GUI_Board;
 
 import Game.Squares.*;
 

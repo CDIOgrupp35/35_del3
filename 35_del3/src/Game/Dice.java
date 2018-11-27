@@ -25,7 +25,7 @@ public class Dice {
      * @return an int[] array containing the face values of the dice.
      */
     public int[] roll() {
-        for(int i = 0; i <= diceAmount; i++) {
+        for(int i = 0; i < diceAmount; i++) {
             diceArray[i] = random.nextInt(sides) + 1;
         }
         return diceArray;
