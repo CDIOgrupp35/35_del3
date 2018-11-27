@@ -3,7 +3,7 @@ import Game.*;
 import Game.Player.*;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Player;
-
+import
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -16,6 +16,7 @@ public class Main{
         GUIController gui = new GUIController();
         Game monopoly = new Game(board, gui);
         Scanner scan = new Scanner(System.in);
+
 
         gui.showMessage("Angiv antallet af spillere (2-4)");
         int participants = scan.nextInt();
