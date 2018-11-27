@@ -95,4 +95,12 @@ public class GUIController {
     public void showTurn(String turn){
         gui.showMessage(turn);
     }
+
+    public void makeButtonPlayers(String text, String opt1, String opt2, String opt3){
+        gui.getUserButtonPressed(text, opt1, opt2, opt3);
+    }
+
+    public void makeText(String disText){
+        gui.getUserString(disText);
+    }
 }
