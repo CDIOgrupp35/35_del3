@@ -8,8 +8,11 @@ import gui_fields.GUI_Jail;
 import gui_fields.GUI_Player;
 import gui_fields.GUI_Refuge;
 import gui_fields.GUI_Street;
+import gui_fields.GUI_Car;
 
 import Game.Squares.*;
+
+import java.awt.*;
 
 public class GUIController {
     GUI gui = new GUI();
@@ -92,6 +95,13 @@ public class GUIController {
         gui.showMessage(jakobHarMerit);
     }
 
+    public GUI_Car[] createGUICars(Player[] players){
+        GUI_Car[] gCars = new GUI_Car[players.length];
+        for (int i = 0; i<gCars.length; i++){
+            gCars[i] = new GUI_Car();
+        }
+        return gCars;
+    }
 
 
 }
