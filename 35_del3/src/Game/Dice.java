@@ -73,7 +73,7 @@ public class Dice {
      * @return the value of the indexed dice.
      */
     public int getFaceValue(int index) {
-        return this.diceArray[index];
+        return diceArray[index];
     }
 
 }

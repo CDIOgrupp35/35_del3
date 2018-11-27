@@ -3,7 +3,7 @@ import Game.*;
 import Game.Player.*;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Player;
-
+import gui_codebehind.GUI_BoardController;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -36,7 +36,7 @@ public class Main{
         while (monopoly.getPlay()){
             for (int i = 0; i < playersArr.length; i++){
                 monopoly.playTurn(playersArr[i]);
-                gui.showRoll(monopoly.getDie().getFaceValue(1));
+                gui.showRoll(monopoly.getDie().getFaceValue(0));
                 gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
                 //TODO square message
                 if (monopoly.endGame(playersArr)){

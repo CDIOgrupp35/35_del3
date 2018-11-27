@@ -40,7 +40,7 @@ public class Game {
 
     public void playTurn(Player player){
         die.roll();
-        board.movePlayer(player, die.getFaceValue(1));
+        board.movePlayer(player, die.getFaceValue(0));
         board.getSquares()[player.getLocation()].landOn(player);
 
     }
