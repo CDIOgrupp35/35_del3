@@ -13,7 +13,7 @@ import gui_fields.GUI_Board;
 import Game.Squares.*;
 
 public class GUIController {
-    GUI gui = new GUI();
+    GUI gui;
 
 
     public GUI_Field[] createGUIFields(Square[] squares){
@@ -59,6 +59,7 @@ public class GUIController {
                 }
             }
         }
+        gui = new GUI(guiFields);
     }
 
     public void addPlayers(GUI_Player[] guiPlayers){
@@ -92,7 +93,6 @@ public class GUIController {
     public void showTurn(String jakobHarMerit){
         gui.showMessage(jakobHarMerit);
     }
-
 
 
 }
