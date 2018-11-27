@@ -13,9 +13,17 @@ public class Main{
     public static void main(String[] args) {
 
         GameBoard board = new GameBoard();
-
         Game monopoly = new Game(board);
         GUIController gui = new GUIController();
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Angiv antallet af spillere (2-4)");
+        int participants = scan.nextInt();
+        Player[] playersArr = new Player[participants];
+        if (participants >= 2 && participants <= 4){
+            playersArr = monopoly.setPlayers(participants);
+        }
+
 
         // Opsætning af GuiBoard
         GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
@@ -23,8 +31,6 @@ public class Main{
 
 
         // Spillere instantieres og Gui sættes op
-        int participants = 2;
-        Player[] playersArr = monopoly.setPlayers(participants);
         GUI_Player[] guiPlayersArr = gui.createPlayers(playersArr);
         gui.addPlayers(guiPlayersArr);
 
