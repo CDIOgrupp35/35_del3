@@ -39,6 +39,7 @@ public class Game {
     }
 
     public void playTurn(Player player){
+        gui.showMessage("Tryk enter, eller click 'OK' for at rulle med terningen");
         die.roll();
         board.movePlayer(player, die.getFaceValue(1));
         board.getSquares()[player.getLocation()].landOn(player);
