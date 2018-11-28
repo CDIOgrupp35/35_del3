@@ -31,7 +31,6 @@ public class ChanceDeck {
             } else if (i >= 16 && i < 20) {
                 deck[i] = new ChanceCard("Ryk frem!", "Du skal prøve dit nye skateboard, ryk frem til skateparken", 6);
             }
-
         }
 
     }
@@ -57,21 +56,20 @@ public class ChanceDeck {
 
 
 
-        for(int i = 0; i<deck.length;i++){
+        for(int i = 0; i<deck.length;i++) {
             boolean cardPlaced = false;
-
-            while(!cardPlaced){
+            while (!cardPlaced) {
                 int index = random.nextInt(20);
-
-                if(shuffled [index] == null){
+                if (shuffled[index] == null) {
                     shuffled[index] = deck[i];
                     cardPlaced = true;
 
 
                 }
-
             }
         }
         deck = shuffled;
     }
 }
+
+
