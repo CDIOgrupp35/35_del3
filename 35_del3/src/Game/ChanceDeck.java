@@ -69,11 +69,9 @@ public class ChanceDeck {
 
 
                 }
-                deck = shuffled;
+
             }
-
-
+        }
+        deck = shuffled;
     }
-}
-
 }

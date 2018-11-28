@@ -43,7 +43,7 @@ public class GameBoard {
 
     public void movePlayer(Player player, int roll) { //TODO undgå out of bounds
         player.setLocation(player.getLocation() + roll);
-        if (player.getLocation() > squares.length)
+        if (player.getLocation() >= squares.length)
             passStart(player, player.getLocation() - squares.length);
     }
 
