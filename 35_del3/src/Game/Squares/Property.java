@@ -34,6 +34,7 @@ public class Property extends Square {
             setOwner(player);
             toggleVacant();
         }
+        System.out.println(player.getBalance().getPoints());
     }
 
     /**Method swapping the boolean value of vacant.

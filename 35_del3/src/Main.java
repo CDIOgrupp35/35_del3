@@ -17,17 +17,20 @@ public class Main{
         Game monopoly = new Game(board, gui);
         Scanner scan = new Scanner(System.in);
 
+//        Nød løsning hvis det ikke kan gøres nice gennem gui!!
+//        System.out.println("Vægl venligst antallet af spillere (2-4)");
+//        int participants = scan.nextInt();
+//        Player[] playersArr = new Player[participants];
+//        if (participants >= 2 && participants <= 4){
+//            playersArr = monopoly.setPlayers(participants);
+//        }
+
         //Opsætning af GUIBoard
         GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
         gui.createBoard(guiFields, monopoly.getBoard().getSquares());
 
-        gui.showMessage("Angiv antallet af spillere (2-4)");
-        int participants = scan.nextInt();
-        Player[] playersArr = new Player[participants];
-        if (participants >= 2 && participants <= 4){
-            playersArr = monopoly.setPlayers(participants);
-        }
-
+        int participants = gui.enterInt();
+        Player[] playersArr = monopoly.setPlayers(participants);
 
         // Spillere instantieres og Gui sættes op
         GUI_Player[] guiPlayersArr = gui.createPlayers(playersArr);

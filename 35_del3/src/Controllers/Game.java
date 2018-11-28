@@ -31,8 +31,9 @@ public class Game {
         }
 
         for(int i = 0; i < players.length; i++){
-            gui.showMessage("Venligst indtast dit navn");
-            String name = scan.nextLine();
+            //System.out.println("Spiller " + (i+1) + " indtast venligst dit navn");
+            //String name = scan.nextLine();
+            String name = gui.makeText("Venligst indtast dit navn");
             players[i] = new Player(name,balance);
         }
         return players;
@@ -43,6 +44,7 @@ public class Game {
         die.roll();
         board.movePlayer(player, die.getFaceValue(0));
         board.getSquares()[player.getLocation()].landOn(player);
+        gui.updatePlayerBalance(players);
 
     }
 

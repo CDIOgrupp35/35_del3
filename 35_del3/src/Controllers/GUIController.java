@@ -16,7 +16,7 @@ import java.awt.*;
 
 public class GUIController {
     GUI gui;
-
+    private GUI_Player[] gPlayers;
 
     public GUI_Field[] createGUIFields(Square[] squares){
         GUI_Field[] guiFields = new GUI_Field[squares.length];
@@ -70,7 +70,7 @@ public class GUIController {
     }
 
     public GUI_Player[] createPlayers(Player[] players){
-        GUI_Player[] gPlayers = new GUI_Player[players.length];
+        gPlayers = new GUI_Player[players.length];
         for (int i =0; i<players.length; i++){
             gPlayers[i] = new GUI_Player(players[i].getName(), players[i].getBalance().getPoints());
         }
@@ -82,6 +82,12 @@ public class GUIController {
             gFields[i].removeAllCars();
         for (int i = 0; i<players.length; i++)
             gFields[players[i].getLocation()].setCar(gPlayers[i], true);
+    }
+
+    public void updatePlayerBalance(Player[] players){
+        for(int i = 0; i < players.length; i++){
+            gPlayers[i].setBalance(players[i].getBalance().getPoints());
+        }
     }
 
     public void showMessage(String message){
@@ -100,7 +106,11 @@ public class GUIController {
         gui.getUserButtonPressed(text, opt1, opt2, opt3);
     }
 
-    public void makeText(String disText){
-        gui.getUserString(disText);
+    public int enterInt(){
+        return gui.getUserInteger("Indtast venligst antallet af spillere (2-4)", 2, 4);
+    }
+
+    public String makeText(String disText){
+        return gui.getUserString(disText);
     }
 }
