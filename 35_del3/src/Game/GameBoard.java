@@ -41,9 +41,9 @@ public class GameBoard {
         player.getBalance().addPoints(2);
     }
 
-    public void movePlayer(Player player, int roll) { //TODO undgå out of bounds
+    public void movePlayer(Player player, int roll) {
         player.setLocation(player.getLocation() + roll);
-        if (player.getLocation() > squares.length)
+        if (player.getLocation() >= squares.length)
             passStart(player, player.getLocation() - squares.length);
     }
 
