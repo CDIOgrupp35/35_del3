@@ -74,6 +74,25 @@ public class GUIController {
         for (int i =0; i<players.length; i++){
             gPlayers[i] = new GUI_Player(players[i].getName(), players[i].getBalance().getPoints());
         }
+        for (int i =0; i < gPlayers.length; i++) {
+            switch (i) {
+                case 0:
+                    gPlayers[i].getCar().setPrimaryColor(Color.red);
+                    break;
+                case 1:
+                    gPlayers[i].getCar().setPrimaryColor(Color.blue);
+                    break;
+                case 2:
+                    gPlayers[i].getCar().setPrimaryColor(Color.orange);
+                    break;
+                case 3:
+                    gPlayers[i].getCar().setPrimaryColor(Color.magenta);
+                    break;
+                default:
+                    gui.showMessage("Error setting colors of cars.");
+
+            }
+        }
         return gPlayers;
     }
 
