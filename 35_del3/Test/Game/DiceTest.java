@@ -18,7 +18,7 @@ class DiceTest {
         int[] diceArray = diceTest.roll();
 
         int minRoll = 1;
-        int maxRoll = diceTest.sides;
+        int maxRoll = diceTest.getSides();
 
         for (int i = 0; i < diceArray.length; i++) {
             assertTrue(diceArray[i] >= minRoll && diceArray[i] <= maxRoll);
@@ -42,15 +42,11 @@ class DiceTest {
      */
     @Test
     void sumTest() throws Exception {
-        int[] diceArray = diceTest2.roll();
 
-        diceArray[0] = 5;
-        diceArray[1] = 6;
-
-        diceTest2.sum(diceArray);
+        diceTest2.setFaceValue(0,5);
+        diceTest2.setFaceValue(1,6);
 
         assertEquals(diceTest2.sum(), 11);
-
 
     }
 
