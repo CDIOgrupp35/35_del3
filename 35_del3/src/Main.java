@@ -1,6 +1,8 @@
 import Controllers.*;
 import Game.*;
 import Game.Player.*;
+import Game.Squares.Chance;
+import gui_fields.GUI_Chance;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Player;
 import gui_codebehind.GUI_BoardController;
@@ -15,7 +17,6 @@ public class Main{
         GameBoard board = new GameBoard();
         GUIController gui = new GUIController();
         Game monopoly = new Game(board, gui);
-        Scanner scan = new Scanner(System.in);
 
 //        Nød løsning hvis det ikke kan gøres nice gennem gui!!
 //        System.out.println("Vægl venligst antallet af spillere (2-4)");
@@ -29,6 +30,7 @@ public class Main{
         GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
         gui.createBoard(guiFields, monopoly.getBoard().getSquares());
 
+        gui.showMessage("Velkomment til Monopoly!");
         int participants = gui.enterInt();
         Player[] playersArr = monopoly.setPlayers(participants);
 
@@ -38,8 +40,13 @@ public class Main{
 
         while (monopoly.getPlay()){
             for (int i = 0; i < playersArr.length; i++){
-                monopoly.playTurn(playersArr[i]);
-                gui.showRoll(monopoly.getDie().getFaceValue(0));
+                Player cPlayer = playersArr[i];
+                gui.showMessage(cPlayer.getName() + ", det er din tur. \nTryk enter, eller click 'OK' for at rulle med terningen");
+                monopoly.playTurn(cPlayer);
+                int faceValue = monopoly.getDie().getFaceValue(0);
+                gui.showRoll(faceValue);
+                gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
+                monopoly.playTurn2(cPlayer);
                 gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
                 //TODO square message
                 if (monopoly.endGame(playersArr)){
@@ -48,7 +55,9 @@ public class Main{
                 }
             }
         }
-        monopoly.winner(playersArr);
+        Player winner = monopoly.winner(playersArr);
+        gui.showMessage("Tillykke " + winner.getName() + ", du har vundet spillet!");
+
 
 
 //        String jFile = "";
