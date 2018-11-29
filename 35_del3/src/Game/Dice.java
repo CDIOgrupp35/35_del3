@@ -76,6 +76,10 @@ public class Dice {
         return diceArray[index];
     }
 
+    public int getSides() {
+        return sides;
+    }
+
 }
 
 
