@@ -12,6 +12,8 @@ public class Chance extends Square {
     }
 
     public void landOn(Player player){
+        super.landOn(player);
+        sqMessage += ". Tryk \'OK\' eller enter for at trække et Chancekort";
         deck.drawCard().executeEffect(player);
     }
 }

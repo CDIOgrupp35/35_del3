@@ -39,8 +39,11 @@ public class Main{
 
         while (monopoly.getPlay()){
             for (int i = 0; i < playersArr.length; i++){
-                monopoly.playTurn(playersArr[i]);
-                gui.showRoll(monopoly.getDie().getFaceValue(0));
+                Player cPlayer = playersArr[i];
+                gui.showMessage(cPlayer.getName() + ", det er din tur. \nTryk enter, eller click 'OK' for at rulle med terningen");
+                monopoly.playTurn(cPlayer);
+                int faceValue = monopoly.getDie().getFaceValue(0);
+                gui.showRoll(faceValue);
                 gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
                 //TODO square message
                 if (monopoly.endGame(playersArr)){

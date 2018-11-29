@@ -8,6 +8,13 @@ public class UneventfulSq extends Square {
     }
 
     public void landOn(Player player){
-        System.out.println("Take a break");
+        super.landOn(player);
+        if (sqName.equalsIgnoreCase("Start")) {
+            sqMessage += "";
+        }
+        else{
+            sqMessage += ". Din tur er slut.";
+        }
+
     }
 }

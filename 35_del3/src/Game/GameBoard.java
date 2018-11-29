@@ -38,6 +38,7 @@ public class GameBoard {
 
     public void passStart(Player player, int pastStart){
         player.setLocation(0+pastStart);
+        squares[player.getLocation()].setSqMessage(squares[player.getLocation()].getSqMessage() + "Du er landet på eller har passeret start. Modtag 2M");
         player.getBalance().addPoints(2);
     }
 

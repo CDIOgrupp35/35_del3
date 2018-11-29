@@ -38,4 +38,6 @@ public class ChanceCard {
                 player.setLocation(6);
         }
     }
+
+
 }

@@ -5,6 +5,7 @@ public abstract class Square {
     protected int sqNum;
     protected String sqName;
     protected int price;
+    protected String sqMessage;
 
     protected Square(int sqNum, String sqName){
         this.sqNum = sqNum;
@@ -14,12 +15,18 @@ public abstract class Square {
     public Square(){}
 
     public void landOn(Player player){
-
+        sqMessage = player.getName() + ", du er landet på " + sqName + " ";
     }
 
     public String getSqName(){return sqName;}
 
     public int getPrice() {
         return price;
+    }
+
+    public String getSqMessage(){ return sqMessage;}
+
+    public void setSqMessage(String newMessage){
+        sqMessage = newMessage;
     }
 }

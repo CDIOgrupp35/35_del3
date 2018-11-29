@@ -26,15 +26,17 @@ public class Property extends Square {
      * @param player
      */
     public void landOn(Player player){
+        super.landOn(player);
         player.getBalance().subPoints(price);
         if(!vacant){
+            sqMessage += "og skal betale husleje til " + owner.getName();
             owner.getBalance().addPoints(price);
         }
         else{
+            sqMessage += ", som er ledigt og køber derfor dette";
             setOwner(player);
             toggleVacant();
         }
-        System.out.println(player.getBalance().getPoints());
     }
 
     /**Method swapping the boolean value of vacant.
@@ -58,6 +60,5 @@ public class Property extends Square {
     public int getPrice() {return price;}
 
     public void setPrice(int price) {this.price = price;}
-
 
 }
