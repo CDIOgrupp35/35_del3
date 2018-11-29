@@ -3,7 +3,7 @@ import Game.Player.Player;
 import org.json.simple.JSONObject;
 //import org.junit.jupiter.api.Test;
 
-class GameIntegrationTest {
+class GameIntegrationTestOLD {
 
 //    Player testPlayer1 = new Player("player1");
 //    Player testPlayer2 = new Player("player2");
