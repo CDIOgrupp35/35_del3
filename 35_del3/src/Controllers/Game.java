@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import Game.*;
 import Game.Player.*;
+import Game.Squares.Chance;
 
 public class Game {
     private Dice die = new Dice(1,6);
@@ -42,10 +43,23 @@ public class Game {
     public void playTurn(Player player){
         die.roll();
         board.movePlayer(player, die.getFaceValue(0));
-        board.getSquares()[player.getLocation()].landOn(player);
-        gui.showMessage(player.getName() + board.getSquares()[player.getLocation()].getSqMessage());
-        gui.updatePlayerBalance(players);
 
+
+    }
+
+    public void playTurn2(Player player) {
+        if (!(board.getSquares()[player.getLocation()] instanceof  Chance)) {
+            board.getSquares()[player.getLocation()].landOn(player);
+            gui.showMessage(player.getName() + board.getSquares()[player.getLocation()].getSqMessage());
+        }
+        else {
+            Chance landedOn =(Chance) board.getSquares()[player.getLocation()];
+            landedOn.landOn(player);
+            gui.showMessage(player.getName() + landedOn.getSqMessage());
+            gui.showMessage(landedOn.getpulledCardText());
+            landedOn.executeEffect(player);
+        }
+        gui.updatePlayerBalance(players);
     }
 
     public boolean endGame(Player[] players){

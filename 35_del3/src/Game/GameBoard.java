@@ -23,11 +23,11 @@ public class GameBoard {
                 squares[i] = new UneventfulSq(i, "START");
             }else if (i == 3 || i == 9 || i == 15 || i == 21){
                 squares[i] = new Chance(i, "CHANCE", cDeck);
-            }else if (i == 6){
+            }else if (i == 18){
                 squares[i] = new Jail(i,"FÆNGSEL", 1);
             }else if(i == 12){
                 squares[i] = new UneventfulSq(i, "GRATIS PARKERING");
-            }else if (i == 18){
+            }else if (i == 6){
                 squares[i] = new UneventfulSq(i, "PÅ BESØG");
             }else{
                 squares[i] = new Property(i, pNames[count], pPrice[count]);

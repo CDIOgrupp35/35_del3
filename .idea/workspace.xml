@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2911b07-e27b-4a3a-916f-a569f5ae3499" name="Default Changelist" comment="">
+    <list default="true" id="c2911b07-e27b-4a3a-916f-a569f5ae3499" name="Default Changelist" comment="Made some changes to update playerpositions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/35_del3/src/Controllers/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Controllers/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Squares/Jail.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Squares/Jail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/35_del3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/target/classes/Controllers/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/target/classes/Controllers/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/target/classes/Game/ChanceCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/target/classes/Game/ChanceCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/target/classes/Game/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/target/classes/Game/GameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/target/classes/Game/Squares/Chance.class" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/target/classes/Game/Squares/Chance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/target/classes/Game/Squares/Jail.class" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/target/classes/Game/Squares/Jail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/target/classes/Game/Squares/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/target/classes/Game/Squares/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/target/classes/Game/Squares/UneventfulSq.class" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/target/classes/Game/Squares/UneventfulSq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/target/classes/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/35_del3/out/" />
     <ignored path="$PROJECT_DIR$/35_del3/target/" />
@@ -51,26 +59,26 @@
     <session id="-1767841206">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="22" />
+          <entry key="class" value="3" />
+          <entry key="java" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="22" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2666" />
-          <entry key="txt" value="272" />
+          <entry key="java" value="3732" />
+          <entry key="txt" value="324" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2666" />
-          <entry key="PLAIN_TEXT" value="272" />
+          <entry key="JAVA" value="3732" />
+          <entry key="PLAIN_TEXT" value="324" />
         </counts>
       </usages-collector>
     </session>
@@ -80,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/35_del3/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="46" column="79" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+            <state relative-caret-position="176">
+              <caret line="49" column="79" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,8 +100,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="153">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding>
+                <element signature="e#1201#1202#0" expanded="true" />
+                <element signature="e#1232#1233#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,19 +148,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Jail.java">
+        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="45" column="98" selection-start-line="45" selection-start-column="98" selection-end-line="45" selection-end-column="98" />
+            <state relative-caret-position="53">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#657#658#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,8 +162,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="86">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
+              <folding>
+                <element signature="e#3962#3963#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,17 +174,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/35_del3/src/Game/GameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="28" column="67" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+            <state relative-caret-position="86">
+              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -149,30 +183,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="193">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -188,16 +204,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/GameBoard.java" />
         <option value="$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java" />
         <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Controllers/Game.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Main.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java" />
         <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Jail.java" />
         <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Main.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/GameBoard.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Controllers/Game.java" />
       </list>
     </option>
   </component>
@@ -272,7 +288,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="println&#9;PSI&#9;JAVA://com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util#println&#10;System.out&#9;null&#9;null&#10;balance&#9;PSI&#9;JAVA://Game.Player.Player#getBalance" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543502660599" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543506116755" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -361,13 +377,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17194000" />
+    <option name="totallyTimeSpent" value="20508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17165992" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17165992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -375,9 +391,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2366548" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.17793594" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45373666" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -472,7 +488,8 @@
     <MESSAGE value="Winner message implemented" />
     <MESSAGE value="Square messeges added to Square class and subclasses" />
     <MESSAGE value="GuiSquare messages partly implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="GuiSquare messages partly implemented" />
+    <MESSAGE value="Made some changes to update playerpositions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made some changes to update playerpositions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -483,10 +500,10 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java</url>
-          <line>60</line>
+          <url>file://$PROJECT_DIR$/35_del3/src/Controllers/Game.java</url>
+          <line>55</line>
           <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -497,6 +514,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>board.getSquares()[player.getLocation()] instanceof Chance</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>i == 19</expression-string>
         <language-id>JAVA</language-id>
@@ -559,72 +581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_fields/GUI_Field.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1038">
           <caret line="139" selection-start-line="139" selection-end-line="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="28" column="67" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="45" column="98" selection-start-line="45" selection-start-column="98" selection-end-line="45" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="46" column="79" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -642,21 +602,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java">
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="85">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
           <folding>
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#3962#3963#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_main/GUI.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="94">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#2573#2574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_codebehind/GUI_BoardController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#1572#1776#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="49" column="79" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/GameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#657#658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
