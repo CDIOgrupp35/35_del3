@@ -1,5 +1,4 @@
-package Game;
-
+import Game.Dice;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
@@ -89,7 +88,6 @@ class DiceTest {
                     fail();
                     break;
             }
-
         }
 
         assertTrue((ones >= lowerBound) && (ones <= upperBound));
