@@ -29,6 +29,7 @@ public class Main{
         GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
         gui.createBoard(guiFields, monopoly.getBoard().getSquares());
 
+        gui.showMessage("Velkomment til Monopoly!");
         int participants = gui.enterInt();
         Player[] playersArr = monopoly.setPlayers(participants);
 
@@ -48,7 +49,9 @@ public class Main{
                 }
             }
         }
-        monopoly.winner(playersArr);
+        Player winner = monopoly.winner(playersArr);
+        gui.showMessage("Tillykke " + winner.getName() + ", du har vundet spillet!");
+
 
 
 //        String jFile = "";
