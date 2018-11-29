@@ -45,7 +45,6 @@ public class Main{
                 int faceValue = monopoly.getDie().getFaceValue(0);
                 gui.showRoll(faceValue);
                 gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
-                gui.showMessage(cPlayer.getName() + guiFields[cPlayer.getLocation()].getDescription());
                 //TODO square message
                 if (monopoly.endGame(playersArr)){
                     monopoly.setPlay(false);
