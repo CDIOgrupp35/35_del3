@@ -2,7 +2,6 @@ package Game;
 import Game.Player.*;
 
 public class ChanceCard {
-    GameBoard gameboard;
     String cardName;
     String CardText;
     int cardEffect;
@@ -37,5 +36,9 @@ public class ChanceCard {
             case 6:
                 player.setLocation(6);
         }
+    }
+
+    public String getCardText() {
+        return CardText;
     }
 }

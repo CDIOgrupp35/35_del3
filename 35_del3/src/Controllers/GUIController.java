@@ -46,7 +46,6 @@ public class GUIController {
             }
             else if (squares[i] instanceof Jail){
                 guiFields[i].setSubText("FÆNGSEL");
-                guiFields[i].setDescription("GÅ I FÆNGSEL");
             }
             else if (squares[i] instanceof UneventfulSq){
                 if (squares[i].getSqName().equalsIgnoreCase("Start")){
@@ -57,9 +56,9 @@ public class GUIController {
                 }
                 else if (squares[i].getSqName().equalsIgnoreCase("Gratis Parkering")){
                     guiFields[i].setSubText("PARKERING");
-                    guiFields[i].setDescription("GRATIS PARKERING");
                 }
             }
+            guiFields[i].setDescription(squares[i].getSqMessage());
         }
         gui = new GUI(guiFields);
     }
