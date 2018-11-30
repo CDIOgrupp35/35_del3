@@ -14,13 +14,16 @@ class DiceTest {
      */
     @RepeatedTest(500)
     void rollSidesTest() {
-        int[] diceArray = diceTest1.roll();
+        diceTest1.roll();
 
         int minRoll = 1;
         int maxRoll = diceTest1.getSides();
 
-        for (int i = 0; i < diceArray.length; i++) {
-            assertTrue(diceArray[i] >= minRoll && diceArray[i] <= maxRoll);
+
+        try {
+            assertTrue(diceTest1.sum() >= minRoll && diceTest1.sum() <= maxRoll);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
