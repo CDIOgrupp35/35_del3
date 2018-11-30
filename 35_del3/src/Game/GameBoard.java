@@ -49,6 +49,4 @@ public class GameBoard {
     }
 
     public Square[] getSquares(){return squares;}
-
-    public ChanceDeck getDeck(){return cDeck;}
 }

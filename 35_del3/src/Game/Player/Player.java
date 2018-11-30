@@ -1,12 +1,7 @@
 package Game.Player;
 
 public class Player {
-    /**
-     *
-     */
     private Balance balance;
-    //private GameBoard gameBoard = new GameBoard();
-    private boolean isTurn; // TODO should be removed and turn will be run by for loop now
     private String playerName;
     private int location;
 
@@ -27,19 +22,6 @@ public class Player {
         this.location = location;
     }
 
-    /** Boolean for what player has the turn *
-     *
-     * @return the internal isTurn boolean
-     */
-    public boolean getIsTurn(){
-        return isTurn;
-    }
-
-    /** Boolean for setting the turn to a player */
-    public void setTurn(boolean turn) {
-        isTurn = turn;
-    }
-
     public Balance getBalance(){return balance;}
 
     /**
@@ -50,5 +32,4 @@ public class Player {
     public String getName() {
         return playerName;
     }
-
 }

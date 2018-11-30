@@ -13,7 +13,6 @@ public abstract class Square {
         sqMessage = ", du er landet på " + sqName;
         price = 0;
     }
-    public Square(){}
 
     public void landOn(Player player){
     }
