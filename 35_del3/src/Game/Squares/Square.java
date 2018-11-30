@@ -32,4 +32,8 @@ public abstract class Square {
     public void setSqMessage(String newMessage){
         sqMessage = newMessage;
     }
+
+    public boolean getLandedOn(){return landedOn;}
+
+    public void setLandedOn(boolean on){landedOn = on;}
 }

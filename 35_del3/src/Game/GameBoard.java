@@ -38,8 +38,10 @@ public class GameBoard {
 
     public void passStart(Player player, int pastStart){
         player.setLocation(0+pastStart);
-        if(squares[0].)
-        squares[player.getLocation()].setSqMessage(squares[player.getLocation()].getSqMessage() + "Du er landet på eller har passeret start. Modtag 2M");
+        if(!squares[0].getLandedOn()) {
+            squares[player.getLocation()].setSqMessage(squares[player.getLocation()].getSqMessage() + " Du er landet på eller har passeret start. Modtag 2M");
+        squares[0].setLandedOn(true);
+        }
         player.getBalance().addPoints(2);
     }
 
