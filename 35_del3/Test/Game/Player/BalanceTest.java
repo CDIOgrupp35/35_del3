@@ -8,6 +8,9 @@ class BalanceTest {
 
     Balance balanceTest = new Balance(0);
 
+    /**
+     * Testing the addPoints method
+     */
     @Test
     void addPointsTest() {
         balanceTest.addPoints(5);
@@ -16,8 +19,15 @@ class BalanceTest {
 
     }
 
+    /**
+     * Testing the subPoints method
+     */
     @Test
     void subPointsTest() {
+        balanceTest.setPoints(10);
 
+        balanceTest.subPoints(5);
+
+        assertEquals(balanceTest.getPoints(), 5);
     }
 }
