@@ -6,7 +6,6 @@ public class Property extends Square {
     private int price;
     private boolean vacant;
     private Player owner;
-    //private String sqMessage;
 
     /**Constructor, creates an instance of the class: Property.
      *
@@ -19,8 +18,6 @@ public class Property extends Square {
         vacant = true;
         this.price = price;
     }
-
-    public Property(){}
 
     /**Method applying changes to a players' balance depending on the vacancy of the property.
      *
@@ -56,14 +53,7 @@ public class Property extends Square {
         }
     }
 
-    public boolean isVacant() {return vacant;}
-
     public void setOwner(Player owner){this.owner = owner;}
 
-    public Player getOwner(){return this.owner;}
-
     public int getPrice() {return price;}
-
-    public void setPrice(int price) {this.price = price;}
-
 }

@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2911b07-e27b-4a3a-916f-a569f5ae3499" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/35_del3/Test/Game/ChanceCardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/35_del3/Test/DiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/Test/Game/DiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Controllers/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Controllers/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Player/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Player/Balance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Squares/Jail.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Squares/Jail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/TrialAndGUI.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/35_del3/out/" />
     <ignored path="$PROJECT_DIR$/35_del3/target/" />
@@ -14,95 +27,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1329322612">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="2" />
-          <entry key="java" value="12" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="12" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="686" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="686" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1067866476">
-      <usages-collector id="statistics.vcs.git.usages">
-        <counts>
-          <entry key="git.branch.checkout.remote" value="2" />
-          <entry key="git.branch.delete.local" value="5" />
-          <entry key="git.branch.rename" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="51" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="51" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="12" />
-          <entry key="java" value="2210" />
-          <entry key="txt" value="205" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2210" />
-          <entry key="PLAIN_TEXT" value="217" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/ChanceCardTest.java">
+        <entry file="file://$PROJECT_DIR$/35_del3/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="675">
+              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,33 +55,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Development" />
+        <entry key="$PROJECT_DIR$" value="Game" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/GameBoard.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/Dice.java" />
         <option value="$PROJECT_DIR$/35_del3/Test/Game/DiceTest.java" />
-        <option value="$PROJECT_DIR$/35_del3/Test/DiceTest.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Main.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Controllers/Game.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Jail.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Dice.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/GameBoard.java" />
         <option value="$PROJECT_DIR$/35_del3/src/Game/Player/Balance.java" />
-        <option value="$PROJECT_DIR$/35_del3/Test/Game/Player/BalanceTest.java" />
-        <option value="$PROJECT_DIR$/35_del3/Test/Game/ChanceCardTest.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Player/Player.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -171,11 +102,6 @@
             <path>
               <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
               <item name="35_del3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="35_del3" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
@@ -211,35 +137,96 @@
             <path>
               <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
               <item name="35_del3" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
               <item name="35_del3" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="35_del3" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="Player" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.2" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: diplomitdtu:matadorgui:3.1.3" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: diplomitdtu:matadorgui:3.1.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="matadorgui-3.1.3.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: diplomitdtu:matadorgui:3.1.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="matadorgui-3.1.3.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="gui_main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="data" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="data" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="extractors" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="schema" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543570304631" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543570992952" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -249,17 +236,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="Game.Player" />
       <recent name="Game" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\TimJ1\OneDrive - Danmarks Tekniske Universitet\Studie\DTU\Kursus\Indledende Programmering\IntelliJ\35_del3\35_del3\target\test-classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -274,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BalanceTest.subPointsTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="35_del3" />
@@ -282,63 +262,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BalanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiceTest.rollSidesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="35_del3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Game.Player.*" />
+          <option name="PATTERN" value="Game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Game.Player" />
-      <option name="MAIN_CLASS_NAME" value="Game.Player.BalanceTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BalanceTest.addPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="35_del3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Game.Player.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Game.Player" />
-      <option name="MAIN_CLASS_NAME" value="Game.Player.BalanceTest" />
-      <option name="METHOD_NAME" value="addPoints" />
+      <option name="PACKAGE_NAME" value="Game" />
+      <option name="MAIN_CLASS_NAME" value="Game.DiceTest" />
+      <option name="METHOD_NAME" value="rollSidesTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BalanceTest.addPointsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiceTest.rollTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="35_del3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Game.Player.*" />
+          <option name="PATTERN" value="Game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Game.Player" />
-      <option name="MAIN_CLASS_NAME" value="Game.Player.BalanceTest" />
-      <option name="METHOD_NAME" value="addPointsTest" />
+      <option name="PACKAGE_NAME" value="Game" />
+      <option name="MAIN_CLASS_NAME" value="Game.DiceTest" />
+      <option name="METHOD_NAME" value="rollTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BalanceTest.subPointsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiceTest.sumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="35_del3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Game.Player.*" />
+          <option name="PATTERN" value="Game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Game.Player" />
-      <option name="MAIN_CLASS_NAME" value="Game.Player.BalanceTest" />
-      <option name="METHOD_NAME" value="subPointsTest" />
+      <option name="PACKAGE_NAME" value="Game" />
+      <option name="MAIN_CLASS_NAME" value="Game.DiceTest" />
+      <option name="METHOD_NAME" value="sumTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiceTest.testFairness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="35_del3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Game" />
+      <option name="MAIN_CLASS_NAME" value="Game.DiceTest" />
+      <option name="METHOD_NAME" value="testFairness" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -346,18 +328,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.BalanceTest.addPoints" />
-      <item itemvalue="JUnit.BalanceTest" />
-      <item itemvalue="JUnit.BalanceTest.addPointsTest" />
-      <item itemvalue="JUnit.BalanceTest.subPointsTest" />
+      <item itemvalue="JUnit.DiceTest.rollSidesTest" />
+      <item itemvalue="JUnit.DiceTest.rollTest" />
+      <item itemvalue="JUnit.DiceTest.sumTest" />
+      <item itemvalue="JUnit.DiceTest.testFairness" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BalanceTest.subPointsTest" />
-        <item itemvalue="JUnit.BalanceTest" />
-        <item itemvalue="JUnit.BalanceTest.addPointsTest" />
-        <item itemvalue="JUnit.BalanceTest.addPoints" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DiceTest.testFairness" />
+        <item itemvalue="JUnit.DiceTest.sumTest" />
+        <item itemvalue="JUnit.DiceTest.rollTest" />
+        <item itemvalue="JUnit.DiceTest.rollSidesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -394,24 +376,28 @@
       <option name="project" value="LOCAL" />
       <updated>1543511356757</updated>
     </task>
-    <task id="LOCAL-00004" summary="Creation of BalanceTest">
-      <created>1543515794831</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1543515794831</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Finished addPoints and subPoints tests">
-      <created>1543570257394</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1543570257394</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="DiceTest_rollTest - 2018.11.29 at 17h 46m 29s.xml">
+      <configuration name="DiceTest.rollTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiceTest_rollTest - 2018.11.29 at 17h 46m 51s.xml">
+      <configuration name="DiceTest.rollTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiceTest_rollTest - 2018.11.29 at 17h 47m 08s.xml">
+      <configuration name="DiceTest.rollTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiceTest_sumTest - 2018.11.29 at 18h 07m 47s.xml">
+      <configuration name="DiceTest.sumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiceTest_sumTest - 2018.11.29 at 18h 08m 08s.xml">
+      <configuration name="DiceTest.sumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiceTest_sumTest - 2018.11.29 at 18h 08m 23s.xml">
+      <configuration name="DiceTest.sumTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="DiceTest_testFairness - 2018.11.29 at 18h 27m 05s.xml">
       <configuration name="DiceTest.testFairness" configurationId="JUnit" />
     </history-entry>
@@ -421,45 +407,18 @@
     <history-entry file="DiceTest_testFairness - 2018.11.29 at 18h 27m 23s.xml">
       <configuration name="DiceTest.testFairness" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiceTest_testFairness - 2018.11.29 at 19h 14m 43s.xml">
+    <history-entry file="DiceTest_testFairness - 2018.11.30 at 10h 23m 12s.xml">
       <configuration name="DiceTest.testFairness" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DiceTest - 2018.11.29 at 19h 14m 47s.xml">
-      <configuration name="DiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BalanceTest_addPoints - 2018.11.29 at 19h 28m 13s.xml">
-      <configuration name="BalanceTest.addPoints" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BalanceTest - 2018.11.29 at 19h 28m 36s.xml">
-      <configuration name="BalanceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BalanceTest - 2018.11.30 at 10h 25m 20s.xml">
-      <configuration name="BalanceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BalanceTest - 2018.11.30 at 10h 29m 09s.xml">
-      <configuration name="BalanceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BalanceTest_subPointsTest - 2018.11.30 at 10h 29m 28s.xml">
-      <configuration name="BalanceTest.subPointsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20705000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="19193000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23560767" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20600858" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -468,14 +427,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.21258135" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1724512" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.1724512" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -496,38 +455,33 @@
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.1724512" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.1724512" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.1724512" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Corrected merge-mistake in dice class. Removed old code." />
     <MESSAGE value="Deleted old CDIO-2 content (json files)" />
     <MESSAGE value="Modified the startBalance in the Player method.&#10;Refactored name of toString method to getName." />
@@ -536,9 +490,7 @@
     <MESSAGE value="Creating diceTest" />
     <MESSAGE value="Created getter for Sides-variable for testing" />
     <MESSAGE value="test of Dice.class sum() method." />
-    <MESSAGE value="Creation of BalanceTest" />
-    <MESSAGE value="Finished addPoints and subPoints tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished addPoints and subPoints tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="test of Dice.class sum() method." />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -571,24 +523,11 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/35_del3/src/Game.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.xml/com/sun/org/apache/xalan/internal/xsltc/compiler/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.xml/com/sun/org/apache/xalan/internal/xsltc/compiler/util/Util.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_fields/GUI_Field.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1038">
           <caret line="139" selection-start-line="139" selection-end-line="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -606,48 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_main/GUI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Jail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/35_del3/Test/DiceTestOLD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
@@ -658,91 +555,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/target/test-classes/DiceTest.class" />
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/Test/GameIntegrationTestOLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/Test/BalanceTestOLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Player/Balance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-          <folding>
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/Player/BalanceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Dice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/DiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_main/GUI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#5311#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/35_del3/src/TrialAndGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="15">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/Test/BalanceTestOLD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Controllers/GUIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Player/Balance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Dice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="81" column="1" lean-forward="true" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/35_del3/src/Game/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="693">
+          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Jail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="615">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/ChanceCardTest.java">
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="693">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

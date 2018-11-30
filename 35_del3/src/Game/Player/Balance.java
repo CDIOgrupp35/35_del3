@@ -44,13 +44,4 @@ public class Balance {
     public int getPoints(){
         return this.points;
     }
-
-    /**
-     * A setter to set the current balance.
-     *
-     * @param points The amount of points to se to the current balance.
-     */
-    public void setPoints(int points){
-        this.points = points;
-    }
 }

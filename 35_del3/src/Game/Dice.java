@@ -32,7 +32,6 @@ public class Dice {
         return diceArray;
     }
 
-
     /**
      * loops through the diceArray array and sums all the values
      * 
@@ -81,13 +80,3 @@ public class Dice {
     }
 
 }
-
-
-
-
-
-
-
-
-
-

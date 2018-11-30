@@ -28,6 +28,4 @@ public class Chance extends Square {
     public void executeEffect(Player player) {
         pulledCard.executeEffect(player);
     }
-
-
 }
