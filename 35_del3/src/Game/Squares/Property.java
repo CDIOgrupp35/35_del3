@@ -55,5 +55,9 @@ public class Property extends Square {
 
     public void setOwner(Player owner){this.owner = owner;}
 
+    public Player getOwner() {
+        return owner;
+    }
+
     public int getPrice() {return price;}
 }

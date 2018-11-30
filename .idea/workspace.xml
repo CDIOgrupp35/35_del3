@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2911b07-e27b-4a3a-916f-a569f5ae3499" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/35_del3/Test/Game/ChanceDeckTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/35_del3/Test/Game/Squares/PropertyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/35_del3/Test/Game/Squares/UneventfulSqTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_del3/target/classes/Game/ChanceDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/35_del3/target/classes/Game/ChanceDeck.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/35_del3/out/" />
     <ignored path="$PROJECT_DIR$/35_del3/target/" />
@@ -18,51 +20,66 @@
     <session id="1067866476">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="2" />
+          <entry key="class" value="5" />
+          <entry key="java" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="CLASS" value="5" />
+          <entry key="JAVA" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="327" />
-          <entry key="txt" value="22" />
+          <entry key="java" value="623" />
+          <entry key="txt" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="327" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="JAVA" value="623" />
+          <entry key="PLAIN_TEXT" value="69" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java">
+        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            <state relative-caret-position="391">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding>
-                <element signature="e#2139#2140#0" expanded="true" />
-                <element signature="e#2166#2167#0" expanded="true" />
+                <element signature="e#1427#1428#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/ChanceDeckTest.java">
+        <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/Squares/PropertyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -100,10 +117,12 @@
         <option value="$PROJECT_DIR$/35_del3/src/Game/GameBoard.java" />
         <option value="$PROJECT_DIR$/35_del3/src/Game/Player/Player.java" />
         <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Chance.java" />
-        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java" />
         <option value="$PROJECT_DIR$/35_del3/src/Game/Player/Balance.java" />
         <option value="$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java" />
         <option value="$PROJECT_DIR$/35_del3/Test/Game/ChanceDeckTest.java" />
+        <option value="$PROJECT_DIR$/35_del3/Test/Game/Squares/UneventfulSqTest.java" />
+        <option value="$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java" />
+        <option value="$PROJECT_DIR$/35_del3/Test/Game/Squares/PropertyTest.java" />
       </list>
     </option>
   </component>
@@ -129,6 +148,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,19 +210,25 @@
               <item name="Game" type="462c0819:PsiDirectoryNode" />
               <item name="Player" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="35_del3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="35_del3" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Squares" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543573434416" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543577224405" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -212,6 +238,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Game.Squares" />
       <recent name="Game" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -230,30 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ChanceDeckTest.shuffleCards">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="35_del3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChanceCardTest.executeEffect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="35_del3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Game" />
-      <option name="MAIN_CLASS_NAME" value="Game.ChanceCardTest" />
-      <option name="METHOD_NAME" value="executeEffect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PropertyTest.landOnTest">
     <configuration name="ChanceDeckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="35_del3" />
       <extension name="coverage">
@@ -284,36 +288,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiceTest.testFairness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PropertyTest.landOnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="35_del3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Game.*" />
+          <option name="PATTERN" value="Game.Squares.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Game" />
-      <option name="MAIN_CLASS_NAME" value="Game.DiceTest" />
-      <option name="METHOD_NAME" value="testFairness" />
+      <option name="PACKAGE_NAME" value="Game.Squares" />
+      <option name="MAIN_CLASS_NAME" value="Game.Squares.PropertyTest" />
+      <option name="METHOD_NAME" value="landOnTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UneventfulSqTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="35_del3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Game.Squares.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Game.Squares" />
+      <option name="MAIN_CLASS_NAME" value="Game.Squares.UneventfulSqTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UneventfulSqTest.landOnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="35_del3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Game.Squares.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Game.Squares" />
+      <option name="MAIN_CLASS_NAME" value="Game.Squares.UneventfulSqTest" />
+      <option name="METHOD_NAME" value="landOnTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.DiceTest.testFairness" />
-      <item itemvalue="JUnit.ChanceCardTest.executeEffect" />
       <item itemvalue="JUnit.ChanceDeckTest" />
       <item itemvalue="JUnit.ChanceDeckTest.shuffleCards" />
+      <item itemvalue="JUnit.UneventfulSqTest" />
+      <item itemvalue="JUnit.UneventfulSqTest.landOnTest" />
+      <item itemvalue="JUnit.PropertyTest.landOnTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PropertyTest.landOnTest" />
+        <item itemvalue="JUnit.UneventfulSqTest" />
+        <item itemvalue="JUnit.UneventfulSqTest.landOnTest" />
         <item itemvalue="JUnit.ChanceDeckTest.shuffleCards" />
         <item itemvalue="JUnit.ChanceDeckTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ChanceCardTest.executeEffect" />
-        <item itemvalue="JUnit.DiceTest.testFairness" />
       </list>
     </recent_temporary>
   </component>
@@ -328,6 +362,7 @@
       <option name="presentableId" value="Default" />
       <updated>1543419789222</updated>
       <workItem from="1543502891633" duration="8228000" />
+      <workItem from="1543575615644" duration="1593000" />
     </task>
     <task id="LOCAL-00001" summary="Creating diceTest">
       <created>1543510864589</created>
@@ -357,49 +392,63 @@
       <option name="project" value="LOCAL" />
       <updated>1543572379664</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created drawCardTest and shuffleCardsTest">
+      <created>1543573451012</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543573451012</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Created drawCardTest and shuffleCardsTest">
+      <created>1543573467674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543573467674</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DiceTest_sumTest - 2018.11.29 at 18h 07m 47s.xml">
-      <configuration name="DiceTest.sumTest" configurationId="JUnit" />
+    <history-entry file="UneventfulSqTest - 2018.11.30 at 12h 08m 42s.xml">
+      <configuration name="UneventfulSqTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiceTest_sumTest - 2018.11.29 at 18h 08m 08s.xml">
-      <configuration name="DiceTest.sumTest" configurationId="JUnit" />
+    <history-entry file="UneventfulSqTest - 2018.11.30 at 12h 09m 02s.xml">
+      <configuration name="UneventfulSqTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiceTest_sumTest - 2018.11.29 at 18h 08m 23s.xml">
-      <configuration name="DiceTest.sumTest" configurationId="JUnit" />
+    <history-entry file="UneventfulSqTest_landOnTest - 2018.11.30 at 12h 11m 15s.xml">
+      <configuration name="UneventfulSqTest.landOnTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiceTest_testFairness - 2018.11.29 at 18h 27m 05s.xml">
-      <configuration name="DiceTest.testFairness" configurationId="JUnit" />
+    <history-entry file="UneventfulSqTest_landOnTest - 2018.11.30 at 12h 11m 44s.xml">
+      <configuration name="UneventfulSqTest.landOnTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiceTest_testFairness - 2018.11.29 at 18h 27m 18s.xml">
-      <configuration name="DiceTest.testFairness" configurationId="JUnit" />
+    <history-entry file="UneventfulSqTest_landOnTest - 2018.11.30 at 12h 12m 54s.xml">
+      <configuration name="UneventfulSqTest.landOnTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiceTest_testFairness - 2018.11.29 at 18h 27m 23s.xml">
-      <configuration name="DiceTest.testFairness" configurationId="JUnit" />
+    <history-entry file="UneventfulSqTest_landOnTest - 2018.11.30 at 12h 13m 39s.xml">
+      <configuration name="UneventfulSqTest.landOnTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiceTest_testFairness - 2018.11.30 at 10h 23m 12s.xml">
-      <configuration name="DiceTest.testFairness" configurationId="JUnit" />
+    <history-entry file="UneventfulSqTest_landOnTest - 2018.11.30 at 12h 13m 47s.xml">
+      <configuration name="UneventfulSqTest.landOnTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChanceDeckTest - 2018.11.30 at 11h 15m 51s.xml">
-      <configuration name="ChanceDeckTest" configurationId="JUnit" />
+    <history-entry file="UneventfulSqTest - 2018.11.30 at 12h 23m 12s.xml">
+      <configuration name="UneventfulSqTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChanceDeckTest - 2018.11.30 at 11h 17m 56s.xml">
-      <configuration name="ChanceDeckTest" configurationId="JUnit" />
+    <history-entry file="PropertyTest_landOnTest - 2018.11.30 at 12h 24m 44s.xml">
+      <configuration name="PropertyTest.landOnTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChanceDeckTest_shuffleCards - 2018.11.30 at 11h 20m 44s.xml">
-      <configuration name="ChanceDeckTest.shuffleCards" configurationId="JUnit" />
+    <history-entry file="PropertyTest_landOnTest - 2018.11.30 at 12h 27m 02s.xml">
+      <configuration name="PropertyTest.landOnTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20302000" />
+    <option name="totallyTimeSpent" value="22084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13752665" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1391258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -408,7 +457,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1724512" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20390455" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,38 +478,41 @@
       <window_info anchor="right" id="Database" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23027718" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1391258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.1724512" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3991323" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20390455" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -474,7 +526,8 @@
     <MESSAGE value="Created getter for Sides-variable for testing" />
     <MESSAGE value="test of Dice.class sum() method." />
     <MESSAGE value="added setPoints method" />
-    <option name="LAST_COMMIT_MESSAGE" value="added setPoints method" />
+    <MESSAGE value="Created drawCardTest and shuffleCardsTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created drawCardTest and shuffleCardsTest" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -565,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
           <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,13 +628,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -622,27 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -654,9 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,9 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,24 +716,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java">
+    <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/ChanceDeckTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        <state relative-caret-position="357">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
-            <element signature="e#2139#2140#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/ChanceDeckTest.java">
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/ChanceDeck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="340">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar!/org/junit/platform/commons/util/StringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#601#602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar!/org/junit/jupiter/api/AssertionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#1840#1841#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar!/org/junit/jupiter/api/AssertTrue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar!/org/junit/jupiter/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#1431#1432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/UneventfulSq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/Squares/UneventfulSqTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/src/Game/Squares/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#1427#1428#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/35_del3/Test/Game/Squares/PropertyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
         </state>
       </provider>
     </entry>
