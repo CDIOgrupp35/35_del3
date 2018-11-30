@@ -6,17 +6,14 @@ public abstract class Square {
     protected String sqName;
     protected int price;
     protected String sqMessage;
-    //protected String oGSqMessage;
     protected boolean landedOn = false;
 
     protected Square(int sqNum, String sqName){
         this.sqNum = sqNum;
         this.sqName = sqName;
         sqMessage = ", du er landet på " + sqName;
-        //oGSqMessage =", du er landet på " + sqName;
         price = 0;
     }
-    public Square(){}
 
     public void landOn(Player player){
     }

@@ -21,8 +21,6 @@ public class Property extends Square {
         this.price = price;
     }
 
-    public Property(){}
-
     /**Method applying changes to a players' balance depending on the vacancy of the property.
      *
      * @param player
@@ -36,7 +34,6 @@ public class Property extends Square {
                 landedOn = true;
             }
             owner.getBalance().addPoints(price);
-
         }
         else{
            oGSqMessage = super.getSqMessage();

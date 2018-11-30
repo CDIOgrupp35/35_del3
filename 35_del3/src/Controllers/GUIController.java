@@ -8,7 +8,6 @@ import gui_fields.GUI_Jail;
 import gui_fields.GUI_Player;
 import gui_fields.GUI_Refuge;
 import gui_fields.GUI_Street;
-import gui_fields.GUI_Car;
 
 import Game.Squares.*;
 
@@ -31,7 +30,6 @@ public class GUIController {
                 guiFields[i] = new GUI_Jail();
             }else{
                 guiFields[i] = new GUI_Street();
-                //count ++;
             }
         }
         return guiFields;
@@ -88,9 +86,7 @@ public class GUIController {
                     gPlayers[i].getCar().setPrimaryColor(Color.magenta);
                     break;
                 default:
-                    gui.showMessage("Error setting colors of cars." +
-                            "");
-
+                    gui.showMessage("Error setting colors of cars.");
             }
         }
         return gPlayers;
@@ -116,6 +112,8 @@ public class GUIController {
     public void showRoll(int roll){
         gui.setDie(roll);
     }
+
+    //TODO kan være vi skal bruge showTurn og makeButtonPlayers efter tests
 
     public void showTurn(String turn){
         gui.showMessage(turn);

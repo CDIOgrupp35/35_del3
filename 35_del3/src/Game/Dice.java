@@ -32,7 +32,6 @@ public class Dice {
         return diceArray;
     }
 
-
     /**
      * loops through the diceArray array and sums all the values
      * 
@@ -76,14 +75,8 @@ public class Dice {
         return diceArray[index];
     }
 
+    public int getSides() {
+        return sides;
+    }
+
 }
-
-
-
-
-
-
-
-
-
-

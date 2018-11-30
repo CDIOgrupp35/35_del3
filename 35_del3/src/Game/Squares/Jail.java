@@ -10,6 +10,7 @@ public class Jail extends Square {
         this.fine = fine;
     }
 
+    //TODO M1 bliver ikke betalt ved næste tur efter fængsel
     public void landOn(Player player){
         super.landOn(player);
         if (!landedOn) {

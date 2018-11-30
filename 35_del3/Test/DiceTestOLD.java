@@ -7,7 +7,7 @@
 //import static org.junit.Assert.assertTrue;
 //import static org.junit.Assert.fail;
 
-class DiceTest {
+class DiceTestOLD {
 
 
 //    private Dice testDice = new Dice(2, 6);

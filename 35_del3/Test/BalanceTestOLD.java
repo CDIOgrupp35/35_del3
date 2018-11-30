@@ -1,6 +1,6 @@
 //import org.junit.jupiter.api.Test;
 
-class BalanceTest {
+class BalanceTestOLD {
 
 //    Balance testBalance = new Balance(1000);
 //
