@@ -26,7 +26,6 @@ public class Property extends Square {
      * @param player
      */
     public void landOn(Player player){
-        super.landOn(player);
         player.getBalance().subPoints(price);
         if(!vacant){
             if (!landedOn) {

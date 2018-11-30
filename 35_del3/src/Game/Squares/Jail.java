@@ -12,7 +12,6 @@ public class Jail extends Square {
 
     //TODO M1 bliver ikke betalt ved næste tur efter fængsel
     public void landOn(Player player){
-        super.landOn(player);
         if (!landedOn) {
             setSqMessage(super.getSqMessage() + ". Ryk hen til FÆNGSEL. Når du starter din næste tur skal du betale 1M for at blive løsladt igen");
             landedOn = true;

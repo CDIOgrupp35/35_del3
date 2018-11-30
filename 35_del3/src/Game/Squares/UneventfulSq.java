@@ -8,7 +8,6 @@ public class UneventfulSq extends Square {
     }
 
     public void landOn(Player player){
-        super.landOn(player);
         if (!(sqName.equalsIgnoreCase("Start")) && !landedOn) {
             setSqMessage(getSqMessage() +  ". Din tur er slut.");
             landedOn = true;
