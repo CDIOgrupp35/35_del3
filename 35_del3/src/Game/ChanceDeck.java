@@ -7,13 +7,11 @@ public class ChanceDeck {
     // Creates array
     private ChanceCard[] deck;
 
-
     // Assign objects to array
     public ChanceDeck() {
         deck = new ChanceCard[20];
         assignCards();
     }
-
 
     // method to assign chance cards information
     private void assignCards() {
@@ -32,9 +30,7 @@ public class ChanceDeck {
                 deck[i] = new ChanceCard("Ryk frem!", "Du skal prøve dit nye skateboard, ryk frem til skateparken", 6);
             }
         }
-
     }
-
 
     // method that pulls a chance card from top of deck
     public ChanceCard drawCard() {
@@ -54,8 +50,6 @@ public class ChanceDeck {
 
         Random random = new Random();
 
-
-
         for(int i = 0; i<deck.length;i++) {
             boolean cardPlaced = false;
             while (!cardPlaced) {
@@ -63,13 +57,13 @@ public class ChanceDeck {
                 if (shuffled[index] == null) {
                     shuffled[index] = deck[i];
                     cardPlaced = true;
-
-
                 }
             }
         }
         deck = shuffled;
     }
+
+    public ChanceCard[] getDeck() {
+        return deck;
+    }
 }
-
-
