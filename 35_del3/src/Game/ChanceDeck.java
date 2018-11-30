@@ -43,6 +43,10 @@ public class ChanceDeck {
         return pulled;
     }
 
+    public ChanceCard[] getDeck() {
+        return deck;
+    }
+
     //Method that shuffles the deck of change cards
     public void shuffleCards() {
 
