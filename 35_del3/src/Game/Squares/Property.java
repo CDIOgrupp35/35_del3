@@ -30,12 +30,12 @@ public class Property extends Square {
         super.landOn(player);
         player.getBalance().subPoints(price);
         if(!vacant){
-            setSqMessage(getSqMessage() + "og skal betale husleje til " + owner.getName());
+            setSqMessage(super.getSqMessage() + "og skal betale husleje til " + owner.getName());
 
             owner.getBalance().addPoints(price);
         }
         else{
-            setSqMessage(getSqMessage() + ", som er ledigt og køber derfor dette");
+            setSqMessage(super.getSqMessage() + ", som er ledigt og køber derfor dette");
             setOwner(player);
             toggleVacant();
         }

@@ -88,7 +88,8 @@ public class GUIController {
                     gPlayers[i].getCar().setPrimaryColor(Color.magenta);
                     break;
                 default:
-                    gui.showMessage("Error setting colors of cars.");
+                    gui.showMessage("Error setting colors of cars." +
+                            "");
 
             }
         }
