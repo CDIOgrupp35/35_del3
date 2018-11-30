@@ -62,4 +62,8 @@ public class ChanceDeck {
         }
         deck = shuffled;
     }
+
+    public ChanceCard[] getDeck() {
+        return deck;
+    }
 }
