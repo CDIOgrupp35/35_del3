@@ -12,6 +12,8 @@ public class ChanceCard {
         this.cardEffect = cardEffect;
     }
 
+
+
     public void executeEffect(Player player){
         switch (cardEffect) {
             case 1:
@@ -40,5 +42,9 @@ public class ChanceCard {
 
     public String getCardText() {
         return CardText;
+    }
+
+    public void setCardEffect(int cardEffect) {
+        this.cardEffect = cardEffect;
     }
 }

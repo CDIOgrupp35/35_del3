@@ -44,4 +44,8 @@ public class Balance {
     public int getPoints(){
         return this.points;
     }
+
+    public void setPoints(int points) {
+        this.points = points;
+    }
 }

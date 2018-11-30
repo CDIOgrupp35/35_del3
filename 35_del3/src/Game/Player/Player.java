@@ -24,6 +24,7 @@ public class Player {
 
     public Balance getBalance(){return balance;}
 
+
     /**
      * A string containing the player's name
      *
