@@ -4,16 +4,25 @@ import java.util.Random;
 
 public class ChanceDeck {
 
-    // Creates array
+    /**
+     * Creating array
+     *
+     */
     private ChanceCard[] deck;
 
-    // Assign objects to array
+    /**
+     * Assigning objects to array
+     *
+     */
     public ChanceDeck() {
         deck = new ChanceCard[20];
         assignCards();
     }
 
-    // method to assign chance cards information
+    /**
+     * Method to assign chance cards information
+     *
+     */
     private void assignCards() {
         for (int i = 0; i < deck.length; i++) {
             if (i >= 0 && i < 3) {
@@ -32,7 +41,11 @@ public class ChanceDeck {
         }
     }
 
-    // method that pulls a chance card from top of deck
+    /**
+     * Method that pulls a chance card from top of deck
+     *
+     * @return
+     */
     public ChanceCard drawCard() {
         ChanceCard pulled = deck[0];
         for (int i = 0; i < deck.length-1; i++) {
@@ -47,7 +60,10 @@ public class ChanceDeck {
         return deck;
     }
 
-    //Method that shuffles the deck of change cards
+    /**
+     * Method that shuffles the deck of change cards
+     *
+     */
     public void shuffleCards() {
 
         ChanceCard[] shuffled = new ChanceCard[deck.length];

@@ -78,5 +78,4 @@ public class Dice {
     public int getSides() {
         return sides;
     }
-
 }

@@ -17,6 +17,12 @@ public class GUIController {
     GUI gui;
     private GUI_Player[] gPlayers;
 
+    /**
+     * Creating GUIFields
+     *
+     * @param squares
+     * @return
+     */
     public GUI_Field[] createGUIFields(Square[] squares){
         GUI_Field[] guiFields = new GUI_Field[squares.length];
         for (int i = 0; i<squares.length; i++){
@@ -35,6 +41,12 @@ public class GUIController {
         return guiFields;
     }
 
+    /**
+     * Creating Board and sets text (setSubText)
+     *
+     * @param guiFields
+     * @param squares
+     */
     public void createBoard(GUI_Field[] guiFields, Square[] squares){
 
         for (int i = 0; i<guiFields.length; i++){
@@ -61,11 +73,22 @@ public class GUIController {
         gui = new GUI(guiFields);
     }
 
+    /**
+     * Adding players
+     *
+     * @param guiPlayers
+     */
     public void addPlayers(GUI_Player[] guiPlayers){
         for(int i = 0; i<guiPlayers.length; i++)
             gui.addPlayer(guiPlayers[i]);
     }
 
+    /**
+     * Adding players to the game; g_Players
+     *
+     * @param players
+     * @return
+     */
     public GUI_Player[] createPlayers(Player[] players){
         gPlayers = new GUI_Player[players.length];
         for (int i =0; i<players.length; i++){
@@ -92,6 +115,13 @@ public class GUIController {
         return gPlayers;
     }
 
+    /**
+     * Moving players around the board; getLocation
+     *
+     * @param players
+     * @param gFields
+     * @param gPlayers
+     */
     public void updatePlayerLocation(Player [] players, GUI_Field[] gFields, GUI_Player[] gPlayers){
         for (int i =0; i<gFields.length; i++)
             gFields[i].removeAllCars();
@@ -99,34 +129,50 @@ public class GUIController {
             gFields[players[i].getLocation()].setCar(gPlayers[i], true);
     }
 
+    /**
+     * Updating players balances
+     *
+     * @param players
+     */
     public void updatePlayerBalance(Player[] players){
         for(int i = 0; i < players.length; i++){
             gPlayers[i].setBalance(players[i].getBalance().getPoints());
         }
     }
 
+    /**
+     * gui.showMessage
+     *
+     * @param message
+     */
     public void showMessage(String message){
         gui.showMessage(message);
     }
 
+    /**
+     * setDie(roll)
+     *
+     * @param roll
+     */
     public void showRoll(int roll){
         gui.setDie(roll);
     }
 
-    //TODO kan være vi skal bruge showTurn og makeButtonPlayers efter tests
-
-    public void showTurn(String turn){
-        gui.showMessage(turn);
-    }
-
-    public void makeButtonPlayers(String text, String opt1, String opt2, String opt3){
-        gui.getUserButtonPressed(text, opt1, opt2, opt3);
-    }
-
+    /**
+     * Getter for amount of players
+     *
+     * @return
+     */
     public int enterInt(){
         return gui.getUserInteger("Indtast venligst antallet af spillere (2-4)", 2, 4);
     }
 
+    /**
+     * Receiving string input
+     *
+     * @param disText
+     * @return
+     */
     public String makeText(String disText){
         return gui.getUserString(disText);
     }

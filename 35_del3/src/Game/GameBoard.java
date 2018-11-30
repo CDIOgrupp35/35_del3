@@ -4,6 +4,10 @@ import Game.Squares.*;
 
 public class GameBoard {
 
+    /**
+     * Creating string for names of squares and stating price
+     *
+     */
     private Square[] squares = new Square[24];
     private String[] pNames = new String[]{"Burgerbaren", "Pizzaria","Slikbutikken","Iskiosken","Museet", "Bibloteket",
                                             "Skaterparken", "Svømmingpoolen", "Spillehallen", "Biografen", "Legetøjsbutikken",
@@ -11,11 +15,19 @@ public class GameBoard {
     private int[] pPrice = new int[]{1,1,1,1,2,2,2,2,3,3,3,3,4,4,5,5};
     private ChanceDeck cDeck = new ChanceDeck();
 
+    /**
+     * Setting up squares and shuffling c.Deck
+     *
+     */
     public GameBoard(){
         setUpSquares();
         cDeck.shuffleCards();
     }
 
+    /**
+     * Method to assign squares information
+     *
+     */
     private void setUpSquares(){
         int count = 0;
         for(int i = 0; i < squares.length; i++){
@@ -36,6 +48,12 @@ public class GameBoard {
         }
     }
 
+    /**
+     * Method for giving player M2 for passing or landing on start
+     *
+     * @param player
+     * @param pastStart
+     */
     public void passStart(Player player, int pastStart){
         player.setLocation(0+pastStart);
         if(!squares[0].getLandedOn()) {
@@ -45,11 +63,22 @@ public class GameBoard {
         player.getBalance().addPoints(2);
     }
 
+    /**
+     * Getter and setter for location
+     *
+     * @param player
+     * @param roll
+     */
     public void movePlayer(Player player, int roll) {
         player.setLocation(player.getLocation() + roll);
         if (player.getLocation() >= squares.length)
             passStart(player, player.getLocation() - squares.length);
     }
 
+    /**
+     * Getter for squares
+     *
+     * @return
+     */
     public Square[] getSquares(){return squares;}
 }

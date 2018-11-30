@@ -16,6 +16,12 @@ public class Game {
         this.gui = gui;
     }
 
+    /**
+     * Creating amount of players and balance options for those
+     *
+     * @param input
+     * @return
+     */
     public Player[] setPlayers(int input) {
         players = new Player[input];
         int balance;
@@ -34,6 +40,11 @@ public class Game {
                 balance = 0;
         }
 
+        /**
+         * Creating names for players
+         *
+         * @return
+         */
         for (int i = 0; i < players.length; i++) {
             String name = gui.makeText("Venligst indtast dit navn");
             players[i] = new Player(name, balance);
@@ -41,11 +52,22 @@ public class Game {
         return players;
     }
 
+    /**
+     * Rolls the die and moves the player
+     *
+     * @param player
+     */
     public void playTurn(Player player) {
         die.roll();
         board.movePlayer(player, die.getFaceValue(0));
     }
 
+    /**
+     * Resolving what happens on squares
+     * Updating players balance
+     *
+     * @param player
+     */
     public void playTurn2(Player player) {
         if (!(board.getSquares()[player.getLocation()] instanceof Chance)) {
             board.getSquares()[player.getLocation()].landOn(player);
@@ -60,6 +82,12 @@ public class Game {
         gui.updatePlayerBalance(players);
     }
 
+    /**
+     * Ending the game when a players balance is or gets below zero
+     *
+     * @param players
+     * @return
+     */
     public boolean endGame(Player[] players) {
         for (int i = 0; i < players.length; i++) {
             if (players[i].getBalance().getPoints() <= 0) {
@@ -70,12 +98,18 @@ public class Game {
         return false;
     }
 
+    /**
+     * Stating which player has highest balance
+     *
+     * @param players
+     * @return
+     */
     public Player winner(Player[] players) {
         int i = 0;
         while (i < players.length) {
             int win = 0;
             for (int j = 0; j < players.length; j++) {
-                if (i != j && players[i].getBalance().getPoints() > players[j].getBalance().getPoints()) { //TODO
+                if (i != j && players[i].getBalance().getPoints() > players[j].getBalance().getPoints()) {
                     win++;
                 }
             }
@@ -86,18 +120,38 @@ public class Game {
         return players[i];
     }
 
+    /**
+     * Getter for gameBoard
+     *
+     * @return
+     */
     public GameBoard getBoard() {
         return board;
     }
 
+    /**
+     * Getter for Play
+     *
+     * @return
+     */
     public boolean getPlay() {
         return play;
     }
 
+    /**
+     * Setter for Play
+     *
+     * @param play
+     */
     public void setPlay(boolean play) {
         this.play = play;
     }
 
+    /**
+     * Getter for Die
+     *
+     * @return
+     */
     public Dice getDie() {
         return die;
     }

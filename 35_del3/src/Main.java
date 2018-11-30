@@ -11,7 +11,10 @@ public class Main {
         GUIController gui = new GUIController();
         Game monopoly = new Game(board, gui);
 
-        //Opsætning af GUIBoard
+        /**
+         * Creating GUIBoard
+         *
+         */
         GUI_Field[] guiFields = gui.createGUIFields(monopoly.getBoard().getSquares());
         gui.createBoard(guiFields, monopoly.getBoard().getSquares());
 
@@ -19,10 +22,17 @@ public class Main {
         int participants = gui.enterInt();
         Player[] playersArr = monopoly.setPlayers(participants);
 
-        // Spillere instantieres og Gui sættes op
+        /**
+         * Players getting instantiated and creating GUI
+         *
+         */
         GUI_Player[] guiPlayersArr = gui.createPlayers(playersArr);
         gui.addPlayers(guiPlayersArr);
 
+        /**
+         * Run of play
+         *
+         */
         while (monopoly.getPlay()) {
             for (int i = 0; i < playersArr.length; i++) {
                 Player cPlayer = playersArr[i];
@@ -33,13 +43,17 @@ public class Main {
                 gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
                 monopoly.playTurn2(cPlayer);
                 gui.updatePlayerLocation(playersArr, guiFields, guiPlayersArr);
-                //TODO square message
                 if (monopoly.endGame(playersArr)) {
                     monopoly.setPlay(false);
                     break;
                 }
             }
         }
+
+        /**
+         * The winner is
+         *
+         */
         Player winner = monopoly.winner(playersArr);
         gui.showMessage("Tillykke " + winner.getName() + ", du har vundet spillet!");
     }

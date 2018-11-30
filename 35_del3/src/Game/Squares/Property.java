@@ -9,7 +9,8 @@ public class Property extends Square {
     private boolean landedOn = false;
     private String oGSqMessage;
 
-    /**Constructor, creates an instance of the class: Property.
+    /**
+     * Constructor, creates an instance of the class: Property.
      *
      * @param sqNum
      * @param sqName
@@ -21,7 +22,8 @@ public class Property extends Square {
         this.price = price;
     }
 
-    /**Method applying changes to a players' balance depending on the vacancy of the property.
+    /**
+     * Method applying changes to a players' balance depending on the vacancy of the property.
      *
      * @param player
      */
@@ -44,10 +46,8 @@ public class Property extends Square {
         }
     }
 
-    @Override
-    public String getSqMessage(){ return sqMessage;}
-
-    /**Method swapping the boolean value of vacant.
+    /**
+     * Method swapping the boolean value of vacant.
      *
      */
     public void toggleVacant(){
@@ -59,14 +59,25 @@ public class Property extends Square {
         }
     }
 
-    public boolean isVacant() {return vacant;}
-
+    /**
+     * Setter for owner
+     *
+     * @param owner
+     */
     public void setOwner(Player owner){this.owner = owner;}
 
+    /**
+     * Getter for owner
+     *
+     * @return
+     */
     public Player getOwner(){return this.owner;}
 
+    /**
+     * Getter for price
+     *
+     * @return
+     */
     public int getPrice() {return price;}
-
-    public void setPrice(int price) {this.price = price;}
 
 }

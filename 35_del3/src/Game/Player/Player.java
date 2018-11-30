@@ -14,14 +14,29 @@ public class Player {
         this.location = 0;
     }
 
+    /**
+     * Getter for location
+     *
+     * @return
+     */
     public int getLocation() {
         return location;
     }
 
+    /**
+     * Setter for location
+     *
+     * @param location
+     */
     public void setLocation(int location) {
         this.location = location;
     }
 
+    /**
+     * Getter for balance
+     *
+     * @return
+     */
     public Balance getBalance(){return balance;}
 
 
