@@ -6,7 +6,8 @@ public class Property extends Square {
     private int price;
     private boolean vacant;
     private Player owner;
-    //private String sqMessage;
+    private boolean landedOn = false;
+    private String oGSqMessage;
 
     /**Constructor, creates an instance of the class: Property.
      *
@@ -30,12 +31,18 @@ public class Property extends Square {
         super.landOn(player);
         player.getBalance().subPoints(price);
         if(!vacant){
-            setSqMessage(super.getSqMessage() + "og skal betale husleje til " + owner.getName());
-
+            if (!landedOn) {
+                setSqMessage(oGSqMessage + " og skal betale husleje til " + owner.getName());
+                landedOn = true;
+            }
             owner.getBalance().addPoints(price);
+
         }
         else{
+           oGSqMessage = super.getSqMessage();
             setSqMessage(super.getSqMessage() + ", som er ledigt og køber derfor dette");
+
+
             setOwner(player);
             toggleVacant();
         }
